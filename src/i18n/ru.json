@@ -1,0 +1,26 @@
+{
+    "shop": {
+      "name": "Kassaman Jewellery",
+      "description": "Авторские аксессуары из золота и серебра. Украшения ручной работы, созданные с вниманием к деталям.",
+      "location": "Ереван, Армения"
+    },
+    "menu": {
+      "home": "Главная",
+      "about": "О нас",
+      "novelties": "Новинки",
+      "pendants": "Кулоны",
+      "bracelets": "Браслеты",
+      "shootings": "Съёмки",
+      "rings": "Кольца",
+      "cufflinks": "Запонки",
+      "contact": "Контакты"
+    },
+    "common": {
+      "learnMore": "Подробнее",
+      "viewCollection": "Смотреть коллекцию",
+      "addToCart": "Добавить в корзину",
+      "subscribe": "Подписаться",
+      "followUs": "Подпишитесь на нас в Instagram"
+    }
+  }
+  

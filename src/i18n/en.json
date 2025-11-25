@@ -1,0 +1,26 @@
+{
+    "shop": {
+      "name": "Kassaman Jewellery",
+      "description": "Authorship gold and silver accessories. Handmade jewellery crafted with precision and individuality.",
+      "location": "Yerevan, Armenia"
+    },
+    "menu": {
+      "home": "Home",
+      "about": "About Us",
+      "novelties": "Novelties",
+      "pendants": "Pendants",
+      "bracelets": "Bracelets",
+      "shootings": "Shootings",
+      "rings": "Rings",
+      "cufflinks": "Cufflinks",
+      "contact": "Contact"
+    },
+    "common": {
+      "learnMore": "Learn More",
+      "viewCollection": "View Collection",
+      "addToCart": "Add to Cart",
+      "subscribe": "Subscribe",
+      "followUs": "Follow us on Instagram"
+    }
+  }
+  
