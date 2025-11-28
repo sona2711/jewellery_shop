@@ -4,7 +4,7 @@ export type ContactFormValues = {
   };
   
 
-export  type ContactRequest ={
+export  type ContactRequest = {
     fullName: string;
     phone: string;
     email?: string;

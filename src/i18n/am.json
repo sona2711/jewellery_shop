@@ -1,26 +1,24 @@
 {
-    "shop": {
-      "name": "Kassaman Jewellery",
-      "description": "Հեղինակային ոսկե և արծաթե աքսեսուարներ․ ձեռագործ յուրահատուկ զարդեր՝ ստեղծված սիրով։",
-      "location": "Երևան, Հայաստան"
-    },
-    "menu": {
-      "home": "Գլխավոր",
-      "about": "Մեր մասին",
-      "novelties": "Նորույթներ",
-      "pendants": "Վզնոցներ",
-      "bracelets": "Թևնոցներ",
-      "shootings": "Ֆոտոշարքեր",
-      "rings": "Մատանիներ",
-      "cufflinks": "Ձգակներ",
-      "contact": "Կապ"
-    },
-    "common": {
-      "learnMore": "Իմանալ ավելին",
-      "viewCollection": "Դիտել հավաքածուն",
-      "addToCart": "Ավելացնել զամբյուղ",
-      "subscribe": "Բաժանորդագրվել",
-      "followUs": "Հետևեք մեզ Instagram-ում"
-    }
+  "shop": {
+    "name": "Kassaman Jewellery",
+    "description": "Հեղինակային ոսկե և արծաթե աքսեսուարներ․ ձեռագործ յուրահատուկ զարդեր՝ ստեղծված սիրով։",
+    "location": "Երևան, Հայաստան"
+  },
+  "menu": {
+    "home": "Գլխավոր",
+    "novelties": "Նորույթներ",
+    "pendants": "Վզնոցներ",
+    "bracelets": "Թևնոցներ",
+    "rings": "Մատանիներ",
+    "cufflinks": "Ձգակներ",
+    "about": "Մեր մասին",
+    "contact": "Կապ"
+  },
+  "common": {
+    "learnMore": "Իմանալ ավելին",
+    "viewCollection": "Դիտել հավաքածուն",
+    "addToCart": "Ավելացնել զամբյուղ",
+    "subscribe": "Բաժանորդագրվել",
+    "followUs": "Հետևեք մեզ Instagram-ում"
   }
-  
+}

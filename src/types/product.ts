@@ -20,3 +20,9 @@ export type Product = {
     similarProducts: string[];
 }
 
+export type ProductResponse = {
+    data: Product[];
+    total: number;
+    page: number;
+    limit: number;
+}

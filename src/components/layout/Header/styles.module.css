@@ -1,0 +1,43 @@
+/* main_color: #6B201D ; */
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF7D4;
+
+}
+
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.menu {
+  flex: 1;
+  justify-content: center;
+  background-color: #FFF7D4;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.languageSwitcher {
+  min-width: 120px;
+}
+
+.cartIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
