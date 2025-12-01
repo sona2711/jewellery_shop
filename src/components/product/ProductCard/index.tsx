@@ -2,22 +2,17 @@ import { Card, Image, Button } from "antd";
 import type { ProductCardProps } from "./types";
 import styles from "./styles.module.css";
 import { BUTTON_TEXT } from "./const";
-import { getImageUrl, formatPrice } from "./utils";
+import { formatPrice } from "./utils";  //getImageUrl,
 
-export const ProductCard = ({
-  image,
-  title,
-  price,
-  onBook,
-}: ProductCardProps) => {
-  const imageUrl = getImageUrl(image);
+export const ProductCard = ({image,title,price, onBook,}: ProductCardProps) => {
+  // const imageUrl = getImageUrl(image);
 
   return (
     <Card
       className={styles.card}
       cover={
         <Image
-          src={imageUrl}
+          src={image}
           alt={title}
           className={styles.image}
           preview={false}
@@ -25,7 +20,7 @@ export const ProductCard = ({
         />
       }
       actions={[
-        <Button key="book" type="primary" onClick={onBook} block>
+        <Button key="book" type="default" onClick={onBook} block>
           {BUTTON_TEXT.BOOK}
         </Button>,
       ]}
