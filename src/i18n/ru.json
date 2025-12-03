@@ -20,5 +20,33 @@
     "addToCart": "Добавить в корзину",
     "subscribe": "Подписаться",
     "followUs": "Подпишитесь на нас в Instagram"
-  }
+  },
+  "footer": {
+    "shop": "Магазин",
+    "customer_service": "Служба поддержки",
+    "about_us": "O нас",
+    "help": "Помощь",
+    "links": {
+      "rings": "Кольца",
+      "bracelets": "Браслеты",
+      "necklaces": "Ожерелья",
+      "earrings": "Серьги",
+      "mens_collection": "Мужская коллекция",
+  
+      "shipping": "Доставка",
+      "returns": "Возврат",
+      "warranty": "Гарантия",
+      "track_order": "Отследить заказ",
+  
+      "our_story": "Наша история",
+      "craftsmanship": "Мастерство",
+      "stores": "Магазины",
+      "careers": "Карьера",
+  
+      "faq": "Частые вопросы",
+      "contact": "Связаться с нами",
+      "privacy": "Политика конфиденциальности",
+      "terms": "Условия и положения"
+    }
+  }  
 }

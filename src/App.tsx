@@ -1,19 +1,17 @@
-import { Header } from './components/layout/Header'
-import { Catalog } from './pages/Catalog'
-import { AppFooter } from './components/layout/Footer'
+import { ConfigProvider } from 'antd'
+import { MainLayout } from './components/layout/MainLayout'
+import {theme} from './theme-ant.d/theme'
 
 import './App.css'
 
 
-function App() {
+const App = () => {
  
 
   return (
-    <>
-      <Header image="./src/assets/images/logo/logo_dark.png"/>
-      <Catalog/>
-      <AppFooter/>
-    </>
+    <ConfigProvider theme={theme}>
+      <MainLayout/>
+    </ConfigProvider>    
   )
 }
 

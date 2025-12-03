@@ -4,6 +4,6 @@ type Link = {
 
 export type FooterColumnProps = {
     title: string;
-    links: Link[]
-
+    links: Link[];
+    onChange?: () => void;
 }

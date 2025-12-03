@@ -20,5 +20,30 @@
     "addToCart": "Add to Cart",
     "subscribe": "Subscribe",
     "followUs": "Follow us on Instagram"
-  }
+  },
+  "footer": {
+    "shop": "Shop",
+    "customer_service": "Customer Service",
+    "about_us": "About Us",
+    "help": "Help",
+    "links": {
+      "rings": "Rings",
+      "bracelets": "Bracelets",
+      "necklaces": "Necklaces",
+      "earrings": "Earrings",
+      "mens_collection": "Men's Collection",
+      "shipping": "Shipping",
+      "returns": "Returns",
+      "warranty": "Warranty",
+      "track_order": "Track Order",
+      "our_story": "Our Story",
+      "craftsmanship": "Craftsmanship",
+      "stores": "Stores",
+      "careers": "Careers",
+      "faq": "FAQ",
+      "contact": "Contact Us",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    }
+  }  
 }

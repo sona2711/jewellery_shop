@@ -1,14 +1,16 @@
-import { Layout, Menu, Select, Badge } from "antd";
-import { ShoppingCartOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
+import { Layout, Menu} from "antd";
+import  {SearchOutlined, MenuOutlined} from "@ant-design/icons";
 import type { HeaderProps } from "./types";
-import styles from "./styles.module.css";
-import { LANGUAGE_OPTIONS } from "./const";
 import { getImageUrl } from "./utils";
+import { BookingCartIcon } from "../../common/BookingCartIcon";
+import { LanguageSwitcher } from "../../common/LanguageSwitcher";
+import styles from "./styles.module.css";
+
 
 const { Header: AntHeader } = Layout;
 
-export const Header = ({ image, cartItemsCount = 0 }: HeaderProps) => {
+export const Header = ({ image, cartItemsCount = 0}: HeaderProps) => {
   const { t, i18n } = useTranslation();
 
   const handleLanguageChange = (value: string) => {
@@ -27,31 +29,36 @@ export const Header = ({ image, cartItemsCount = 0 }: HeaderProps) => {
   ];
 
   const logoUrl = getImageUrl(image);
-  // const shopTitle = title || t("shop.name");
 
   return (
     <AntHeader className={styles.header}>
+      <MenuOutlined className={styles.menuIcon} onClick={() => {}}/>
       <div className={styles.logoWrapper}>
         <img src={logoUrl} alt="Logo" className={styles.logo} />
-        {/* {shopTitle && <span>{t("shop.name")}</span>} */}
       </div>
-      <Menu
-        mode="horizontal"
-        className={styles.menu}
-        items={menuItems}
-        defaultSelectedKeys={["home"]}
-      />
-      <div className={styles.actions}>
-        <Select
-          className={styles.languageSwitcher}
-          value={i18n.language}
-          onChange={handleLanguageChange}
-          options={[...LANGUAGE_OPTIONS]}
-        />
-        <Badge count={cartItemsCount} showZero>
-          <ShoppingCartOutlined className={styles.cartIcon} />
-        </Badge>
-      </div>
+      <div className={styles.navWrapper}>
+        <div className={styles.actionsWrapper}>
+           <div className={styles.actions}>
+              {/* <Select
+              className={styles.languageSwitcher}
+              value={i18n.language}
+              onChange={handleLanguageChange}
+              options={[... LANGUAGE_OPTIONS ]}
+              /> */}
+              <LanguageSwitcher language={i18n.language} handleChange={handleLanguageChange}/>
+              <BookingCartIcon count = {cartItemsCount}/>
+            </div>
+          </div>
+        <div className={styles.menuWrapper}>
+          <Menu
+           mode="horizontal"
+           className={styles.menu}
+           items={menuItems}
+           defaultSelectedKeys={["home"]}
+           />
+           <SearchOutlined className={styles.searchIcon} />
+          </div>
+        </div>
     </AntHeader>
   );
 };
