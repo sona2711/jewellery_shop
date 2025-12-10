@@ -4,16 +4,6 @@
     "description": "Авторские аксессуары из золота и серебра. Украшения ручной работы, созданные с вниманием к деталям.",
     "location": "Ереван, Армения"
   },
-  "menu": {
-    "home": "Главная",
-    "novelties": "Новинки",
-    "pendants": "Кулоны",
-    "bracelets": "Браслеты",
-    "rings": "Кольца",
-    "cufflinks": "Запонки",
-    "about": "О нас",
-    "contact": "Контакты"
-  },
   "common": {
     "learnMore": "Подробнее",
     "viewCollection": "Смотреть коллекцию",
@@ -48,5 +38,49 @@
       "privacy": "Политика конфиденциальности",
       "terms": "Условия и положения"
     }
-  }  
+  },
+  "menu": {
+      "women": {
+        "rings": "Кольца",
+        "bracelets": "Браслеты",
+        "necklaces": "Ожерелья",
+        "pendants": "Подвески"
+      },
+  
+      "men": {
+        "cufflinks": "Запонки",
+        "bracelets": "Браслеты",
+        "rings": "Кольца"
+      },
+  
+      "collection": {
+        "novelties": "Новинки",
+        "latestCollection": "Последняя коллекция",
+        "limitedEdition": "Ограниченный выпуск",
+        "designerPicks": "Выбор дизайнеров",
+        "trendingNow": "В тренде"
+      },
+  
+      "giftGuide": {
+        "trendingGifts": "Популярные подарки",
+        "jewelryGifts": "Ювелирные подарки",
+        "personalizedGifts": "Персональные подарки",
+        "luxuryGifts": "Премиальные подарки"
+      },
+  
+      "kassamanWorld": {
+        "ourStory": "Наша история",
+        "craftsmanship": "Мастерство",
+        "materials": "Материалы",
+        "sustainability": "Устойчивость"
+      },
+  
+      "contact": {
+        "emailUs": "Написать нам",
+        "phone": "Телефон",
+        "storeLocations": "Адреса магазинов",
+        "faq": "Вопрос–Ответ"
+      }
+  }
 }
+

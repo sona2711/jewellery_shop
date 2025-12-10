@@ -4,16 +4,7 @@
     "description": "Հեղինակային ոսկե և արծաթե աքսեսուարներ․ ձեռագործ յուրահատուկ զարդեր՝ ստեղծված սիրով։",
     "location": "Երևան, Հայաստան"
   },
-  "menu": {
-    "home": "Գլխավոր",
-    "novelties": "Նորույթներ",
-    "pendants": "Վզնոցներ",
-    "bracelets": "Թևնոցներ",
-    "rings": "Մատանիներ",
-    "cufflinks": "Ձգակներ",
-    "about": "Մեր մասին",
-    "contact": "Կապ"
-  },
+
   "common": {
     "learnMore": "Իմանալ ավելին",
     "viewCollection": "Դիտել հավաքածուն",
@@ -48,6 +39,48 @@
       "privacy": "Գաղտնիության քաղաքականություն",
       "terms": "Պայմաններ և դրույթներ"
     }
-  }
+  },
+  "menu": {
+      "women": {
+        "rings": "Մատանիներ",
+        "bracelets": "Թևնոցներ",
+        "necklaces": "ողկուղներ",
+        "pendants": "Կոնքոյմաներ"
+      },
   
-}
+      "men": {
+        "cufflinks": "Ձողիկներ",
+        "bracelets": "Թևնոցներ",
+        "rings": "Մատանիներ"
+      },
+  
+      "collection": {
+        "novelties": "Նորույթներ",
+        "latestCollection": "Վերջին հավաքածու",
+        "limitedEdition": "Սահմանափակ թողարկում",
+        "designerPicks": "Դիզայներների ընտրանին",
+        "trendingNow": "Թրենդային հիմա"
+      },
+  
+      "giftGuide": {
+        "trendingGifts": "Թրենդային նվերներ",
+        "jewelryGifts": "Զարդերի նվերներ",
+        "personalizedGifts": "Անձնականացված նվերներ",
+        "luxuryGifts": "Շքեղ նվերներ"
+      },
+  
+      "kassamanWorld": {
+        "ourStory": "Մեր պատմությունը",
+        "craftsmanship": "Վարպետություն",
+        "materials": "Նյութեր",
+        "sustainability": "Կայունություն"
+      },
+  
+      "contact": {
+        "emailUs": "Ուղարկեք մեզ նամակ",
+        "phone": "Հեռախոս",
+        "storeLocations": "Խանութների հասցեներ",
+        "faq": "Հաճախ տրվող հարցեր"
+      }
+    }
+  }

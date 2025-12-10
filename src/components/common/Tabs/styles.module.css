@@ -1,0 +1,82 @@
+.wrapper {
+  width: 100%;
+}
+
+/* top row of buttons */
+.buttonsRow {
+  display: flex;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+/* simple text-style buttons */
+.tabBtn {
+  color: #444;
+  font-weight: 500;
+  padding: 6px 0;
+  background: transparent;
+}
+
+/* active visual */
+.tabBtn.active,
+.tabBtn:focus,
+.tabBtn:hover {
+  color: #111;
+}
+
+/* explicit active underline style */
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #000;
+  width: 100%;
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+}
+
+/* panel */
+.panel {
+  background: #fff;
+  padding: 20px 0 28px 0;
+}
+
+/* preview image */
+.previewImage {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* section titles and links */
+.sectionTitle {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: #555;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 0;
+}
+
+.link:hover {
+  color: #000;
+  text-decoration: underline;
+}

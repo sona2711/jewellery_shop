@@ -4,16 +4,6 @@
     "description": "Authorship gold and silver accessories. Handmade jewellery crafted with precision and individuality.",
     "location": "Yerevan, Armenia"
   },
-  "menu": {
-    "home": "Home",
-    "novelties": "Novelties",
-    "pendants": "Pendants",
-    "bracelets": "Bracelets",
-    "rings": "Rings",
-    "cufflinks": "Cufflinks",
-    "about": "About Us",
-    "contact": "Contact"
-  },
   "common": {
     "learnMore": "Learn More",
     "viewCollection": "View Collection",
@@ -45,5 +35,51 @@
       "privacy": "Privacy Policy",
       "terms": "Terms & Conditions"
     }
-  }  
-}
+  },
+  "menu": {
+      "women": {
+        "rings": "Rings",
+        "bracelets": "Bracelets",
+        "necklaces": "Necklaces",
+        "pendants": "Pendants"
+      },
+  
+      "men": {
+        "cufflinks": "Cufflinks",
+        "bracelets": "Bracelets",
+        "rings": "Rings"
+      },
+  
+      "collection": {
+        "novelties": "New Arrivals",
+        "latestCollection": "Latest Collection",
+        "limitedEdition": "Limited Edition",
+        "designerPicks": "Designer Picks",
+        "trendingNow": "Trending Now"
+      },
+  
+      "giftGuide": {
+        "trendingGifts": "Trending Gifts",
+        "jewelryGifts": "Jewelry Gifts",
+        "personalizedGifts": "Personalized Gifts",
+        "luxuryGifts": "Luxury Gifts"
+      },
+  
+      "kassamanWorld": {
+        "ourStory": "Our Story",
+        "craftsmanship": "Craftsmanship",
+        "materials": "Materials",
+        "sustainability": "Sustainability"
+      },
+  
+      "contact": {
+        "emailUs": "Email Us",
+        "phone": "Phone",
+        "storeLocations": "Store Locations",
+        "faq": "FAQ"
+      }
+    }
+  }
+
+
+

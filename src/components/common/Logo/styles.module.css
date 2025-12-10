@@ -1,0 +1,21 @@
+.logoWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    height: 60px;
+  }
+  
+  }
+  

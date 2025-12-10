@@ -1,12 +1,8 @@
-export const LANGUAGES = {
-    EN: "en",
-    RU: "ru",
-    AM: "am",
-  } as const;
-  
-  export const LANGUAGE_OPTIONS = [
-    { label: "English", value: "en" },
-    { label: "Русский", value: "ru" },
-    { label: "Հայերեն", value: "am" },
-  ] as const;
-  
+import type { MenuProps } from "antd";
+
+
+  export const items: MenuProps["items"] = [
+    { key: "en", label: "EN" },
+    { key: "hy", label: "AM" },
+    { key: "ru", label: "RU" },
+  ];

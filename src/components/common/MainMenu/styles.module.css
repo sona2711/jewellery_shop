@@ -1,0 +1,27 @@
+.menuWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+.menu {
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+   
+  }
+
+
+@media (max-width: 768px) {
+    .menuWrapper {
+      display: none;
+    }
+    .menu{
+      display: none;
+    }  
+  } 

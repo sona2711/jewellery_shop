@@ -1,0 +1,23 @@
+.menu_wrapper,
+.menuIcon
+ {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .menu_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .menuIcon {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  }
+  

@@ -1,12 +1,14 @@
+
+
 export const theme = {
     token: {
       colorPrimary: '#6B201D',
-      colorInfo: '#6C3B2A',
+      colorInfo: '#FFFFFF',
       colorTextBase: '#0E0E0E',
       colorBgBase: '#FFFFFF',
       
       fontFamily: 'Inter, sans-serif',
-      borderRadius: 12,
+      border: 'none',
   
       colorBgContainer: '#FFFFFF',
       colorBorder: '#E8E8E8',
@@ -16,7 +18,7 @@ export const theme = {
   
     components: {
       Button: {
-        borderRadius: 12,
+        border: 'none',
         fontWeight: 500,
         backgroundColor: '#6B201D',
       },
@@ -26,11 +28,11 @@ export const theme = {
       },
       Layout: {
         headerBg: '#FFFFFF',
-        footerBg: '#',
+        footerBg: '#0a0a0a',
       },
       Menu: {
         itemHoverColor: '#6B201D',
-      },
+      }
     },
   };
   
