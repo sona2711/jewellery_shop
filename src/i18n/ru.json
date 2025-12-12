@@ -39,12 +39,20 @@
       "terms": "Условия и положения"
     }
   },
-  "menu": {
+    "menu": {
+      "labels": {
+        "women": "Женщины",
+        "men": "Мужчины",
+        "collection": "Коллекция",
+        "giftGuide": "Подарки",
+        "kassamanWorld": "Мир Kassaman",
+        "contactUs": "Контакты"
+      },
       "women": {
         "rings": "Кольца",
         "bracelets": "Браслеты",
         "necklaces": "Ожерелья",
-        "pendants": "Подвески"
+        "pendants": "Кулоны"
       },
   
       "men": {
@@ -58,14 +66,14 @@
         "latestCollection": "Последняя коллекция",
         "limitedEdition": "Ограниченный выпуск",
         "designerPicks": "Выбор дизайнеров",
-        "trendingNow": "В тренде"
+        "trendingNow": "Популярное сейчас"
       },
   
       "giftGuide": {
         "trendingGifts": "Популярные подарки",
         "jewelryGifts": "Ювелирные подарки",
-        "personalizedGifts": "Персональные подарки",
-        "luxuryGifts": "Премиальные подарки"
+        "personalizedGifts": "Индивидуальные подарки",
+        "luxuryGifts": "Роскошные подарки"
       },
   
       "kassamanWorld": {
@@ -76,11 +84,38 @@
       },
   
       "contact": {
-        "emailUs": "Написать нам",
+        "emailUs": "Напишите нам",
         "phone": "Телефон",
-        "storeLocations": "Адреса магазинов",
-        "faq": "Вопрос–Ответ"
+        "storeLocations": "Местоположения магазинов",
+        "faq": "FAQ"
+      },
+  
+      "rings": {
+        "engagement": "Помолвочные кольца",
+        "weddingBands": "Свадебные кольца",
+        "diamondRings": "Бриллиантовые кольца"
+      },
+  
+      "bracelets": {
+        "goldBracelets": "Золотые браслеты",
+        "diamondBracelets": "Бриллиантовые браслеты",
+        "chainBracelets": "Цепочные браслеты"
+      },
+  
+      "necklaces": {
+        "goldNecklaces": "Золотые ожерелья",
+        "diamondNecklaces": "Бриллиантовые ожерелья"
+      },
+  
+      "pendants": {
+        "personalizedPendants": "Индивидуальные кулоны",
+        "gemstonePendants": "Кулоны с драгоценными камнями"
+      },
+  
+      "cufflinks": {
+        "classic": "Классические запонки"
       }
+    }
   }
-}
+
 

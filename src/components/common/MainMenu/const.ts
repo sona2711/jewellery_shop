@@ -1,8 +1,9 @@
 import type { MenuContent } from "./types";
 
+
 export const MENU_CONTENT: MenuContent = {
-  women: {
-    key: "women",
+  women: { 
+    key: "menu.labels.women",
     image: "/images/mega/women.jpg",
     sections: [
       {
@@ -41,7 +42,7 @@ export const MENU_CONTENT: MenuContent = {
   },
 
   men: {
-    key: "men",
+    key: "menu.labels.men",
     image: "/images/mega/men.jpg",
     sections: [
       {
@@ -69,7 +70,7 @@ export const MENU_CONTENT: MenuContent = {
   },
 
   collection: {
-    key: "collection",
+    key: "menu.labels.collection",
     image: "/images/mega/collection.jpg",
     sections: [
       {
@@ -91,7 +92,7 @@ export const MENU_CONTENT: MenuContent = {
   },
 
   giftGuide: {
-    key: "giftGuide",
+    key: "menu.labels.giftGuide",
     image: "/images/mega/gifts.jpg",
     sections: [
       {
@@ -112,7 +113,7 @@ export const MENU_CONTENT: MenuContent = {
   },
 
   kassamanWorld: {
-    key: "kassamanWorld",
+    key: "menu.labels.kassamanWorld",
     image: "/images/mega/kassaman.jpg",
     sections: [
       {
@@ -133,7 +134,7 @@ export const MENU_CONTENT: MenuContent = {
   },
 
   contactUs: {
-    key: "contactUs",
+    key: "menu.labels.contactUs",
     image: "",
     sections: [
       {
@@ -152,4 +153,4 @@ export const MENU_CONTENT: MenuContent = {
       }
     ]
   }
-};
+}

@@ -36,7 +36,15 @@
       "terms": "Terms & Conditions"
     }
   },
-  "menu": {
+   "menu": {
+      "labels": {
+        "women": "Women",
+        "men": "Men",
+        "collection": "Collection",
+        "giftGuide": "Gift Guide",
+        "kassamanWorld": "Kassaman World",
+        "contactUs": "Contact Us"
+      },
       "women": {
         "rings": "Rings",
         "bracelets": "Bracelets",
@@ -77,9 +85,33 @@
         "phone": "Phone",
         "storeLocations": "Store Locations",
         "faq": "FAQ"
+      },
+  
+      "rings": {
+        "engagement": "Engagement Rings",
+        "weddingBands": "Wedding Bands",
+        "diamondRings": "Diamond Rings"
+      },
+  
+      "bracelets": {
+        "goldBracelets": "Gold Bracelets",
+        "diamondBracelets": "Diamond Bracelets",
+        "chainBracelets": "Chain Bracelets"
+      },
+  
+      "necklaces": {
+        "goldNecklaces": "Gold Necklaces",
+        "diamondNecklaces": "Diamond Necklaces"
+      },
+  
+      "pendants": {
+        "personalizedPendants": "Personalized Pendants",
+        "gemstonePendants": "Gemstone Pendants"
+      },
+  
+      "cufflinks": {
+        "classic": "Classic Cufflinks"
       }
     }
   }
-
-
 

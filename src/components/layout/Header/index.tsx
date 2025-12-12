@@ -24,15 +24,13 @@ export const Header = ({ image, cartItemsCount = 0 }: HeaderProps) => {
       <MenuMobile />
       <Logo image={image} />
       <div className={styles.navWrapper}>
-        <div className={styles.actionsWrapper}>
+          <MenuDisplay />
           <SearchOutlined className={styles.searchIcon} />
           <LanguageSwitcher
             language={i18n.language}
             handleChange={handleLanguageChange}
           />
-          <BookingCartIcon count={cartItemsCount} />
-        </div>
-        <MenuDisplay />
+          <BookingCartIcon count={cartItemsCount} /> 
       </div>
     </AntHeader>
   );

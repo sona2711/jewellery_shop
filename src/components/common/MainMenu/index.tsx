@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Menu } from "antd";
 import { MENU_CONTENT } from "./const";
-import type { MenuKey } from "../MobileMenu/types";
+import type { MenuKey } from "./types";
 import styles from "./styles.module.css";
 import { buildMenuItems } from "./utils";
 

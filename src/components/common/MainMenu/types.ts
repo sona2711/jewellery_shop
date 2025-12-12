@@ -13,7 +13,7 @@ export type MenuSection = {
 export type MenuKey = "women" | "men" | "collection" | "giftGuide" | "kassamanWorld" | "contactUs"
 
 export type MenuItem = {
-  key: MenuKey;        
+  key: string;      
   image?: string;           
   sections: MenuSection[]; 
 };
