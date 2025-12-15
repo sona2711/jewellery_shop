@@ -1,6 +1,5 @@
 import type { FooterColumnProps } from "../../common/FooterColumn/types";
 
-// export const FOOTER_SECTIONS: FooterColumnProps[] = [
   export const FOOTER_SECTIONS :  FooterColumnProps[] = [{
     title: "footer.shop",
     links: [
@@ -33,9 +32,12 @@ import type { FooterColumnProps } from "../../common/FooterColumn/types";
     title: "footer.help",
     links: [
       { label: "footer.links.faq", href: "/faq" },
-      { label: "footer.links.contact", href: "/contact" },
       { label: "footer.links.privacy", href: "/privacy" },
       { label: "footer.links.terms", href: "/terms" },
+      { label: "footer.links.contact", href: "/contact" },
     ],
   },
 ];
+
+
+export const FOOTER_TEXT:string = "Constant progress is at the heart of Kassaman's philosophy. and staying true to it is a core principle."

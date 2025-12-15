@@ -7,6 +7,7 @@ import Logo from "../../../assets/images/logo/theme=Ligth.png"
 
 
 
+
 export const MainLayout = () => {
     return (
         <Layout className="styles.main-container">

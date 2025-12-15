@@ -1,0 +1,1 @@
+export const FORM_TITLE : string = "Join the World of KASSAMAN"
