@@ -1,6 +1,7 @@
 type Link = { 
     label: string;
-    href: string }
+    href: string ;
+}
 
 export type FooterColumnProps = {
     title: string;

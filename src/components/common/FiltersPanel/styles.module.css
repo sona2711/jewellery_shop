@@ -1,0 +1,11 @@
+.filters {
+    margin-top: 10px;
+    padding: 1rem; 
+}
+
+.select {
+    border-radius: 1px !important;
+    border: none !important;
+    color: black !important;
+}
+

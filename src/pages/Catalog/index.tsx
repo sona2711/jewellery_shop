@@ -1,14 +1,27 @@
+import { useState } from "react";
 import { ProductList } from "../../components/product/ProductList";
 import { PRODUCT_LIST } from "./const";
-// import { useTranslation } from "react-i18next";
+import { SORT_OPTIONS } from "../../components/common/SortPanel/const";
+import { Filters} from "../../components/common/FiltersPanel";
+import { AppSort } from "../../components/common/SortPanel";
+import styles from "./styles.module.css"
+
 
 export const Catalog  = () => {
-    // const{ t, i18n }= useTranslation()
-   
+    const [ sortValue, setSortValue] = useState<string|undefined>();
+
     return (
-            <div className="style.container">
-                {/* <Filter/> */}
-                <ProductList  items = {PRODUCT_LIST}/>
+            <div className={styles.container}>
+                <div className={styles.filters_wrapper}>
+                    <Filters value={undefined} onChange={()=> {}}/>
+                    <AppSort
+                        options={SORT_OPTIONS}
+                        value={sortValue}
+                        onChange={setSortValue}
+                        placeholderKey="sort.placeholder"
+                    />
+                </div>
+                <ProductList  items={PRODUCT_LIST}/>
             </div>
     )
 }

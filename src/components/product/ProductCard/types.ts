@@ -1,6 +1,8 @@
+import type { Product } from "../../../types/product";
+
 export type ProductCardProps = {
-  image: string;
-  title: string;
-  price: number;
+  item: Product;
   onBook: () => void;
+  isFavorite?: boolean;
+  onToggleFavorite?: () => void;
 };

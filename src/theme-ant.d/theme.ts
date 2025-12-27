@@ -1,10 +1,8 @@
-
-
 export const theme = {
     token: {
       colorPrimary: '#6B201D',
       colorInfo: '#FFFFFF',
-      colorTextBase: '#0E0E0E',
+      colorTextBase: '#6B201D',
       colorBgBase: '#FFFFFF',
       
       fontFamily: "Inter, system-ui, sans-serif",
@@ -12,31 +10,35 @@ export const theme = {
       fontSizeHeading1: 32,
       fontSizeHeading2: 24,
       fontSizeHeading3: 20,
-      border: 'none',
+      fontWeight: 500,
   
-      colorBgContainer: '#FFFFFF',
-      // colorBorder: '#E8E8E8',
   
+      colorBgContainer:'#FFFFFF',
+      colorBorder: '#E8E8E8',
+
       boxShadow: '0px 4px 16px rgba(0,0,0,0.09)',
+
+      borderRadius: 0
     },
   
     components: {
       Button: {
-        border: 'none',
         fontWeight: 500,
-        backgroundColor: '#6B201D',
       },
 
       Card: {
-        borderRadius: 12,
         boxShadow: '0px 4px 16px rgba(0,0,0,0.06)',
       },
       Layout: {
         headerBg: '#FFFFFF',
+        mainBg: '#FFFFFF',
         footerBg: '#0a0a0a',
       },
       Menu: {
         itemHoverColor: '#6B201D',
+      },
+      Select: {
+        color: '#0a0a0a',
       }
     },
   };

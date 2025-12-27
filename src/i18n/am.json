@@ -119,5 +119,40 @@
         "classic": "Դասաական Ճարմանդ",
         "personalized": "Անհատականացված"
       }
-    }
+    },
+    "filters": {
+        "category": {
+          "label": "Կատեգորիա",
+          "ring": "Մատանի",
+          "necklace": "Վզնոց",
+          "bracelet": "Թևնոց",
+          "pendant": "Կախազարդ"
+        },
+        "metal": {
+          "label": "Մետաղ",
+          "gold": "Ոսկի",
+          "silver": "Արծաթ",
+          "platinum": "Պլատին"
+        },
+        "stone": {
+          "label": "Քար",
+          "diamond": "Ադամանդ",
+          "sapphire": "Շափյուղա",
+          "emerald": "Զմրուխտ",
+          "ruby": "Ռուբին"
+        },
+        "availability": {
+          "label": "Առկայություն",
+          "inStock": "Առկա է",
+          "onOrder": "Պատվերով"
+        }
+      },
+      "sort": {
+        "placeholder": "Դասավորել ըստ",
+        "price_asc": "Գին՝ ցածրից բարձր",
+        "price_desc": "Գին՝ բարձրից ցածր",
+        "rating": "Տարածվածություն"
+  }
+    
+    
   }

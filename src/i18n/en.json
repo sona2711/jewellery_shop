@@ -112,6 +112,39 @@
       "cufflinks": {
         "classic": "Classic Cufflinks"
       }
-    }
-  }
+    },
+    "filters": {
+        "category": {
+          "label": "Category",
+          "ring": "Ring",
+          "necklace": "Necklace",
+          "bracelet": "Bracelet",
+          "pendant": "Pendant"
+        },
+        "metal": {
+          "label": "Metal",
+          "gold": "Gold",
+          "silver": "Silver",
+          "platinum": "Platinum"
+        },
+        "stone": {
+          "label": "Stone",
+          "diamond": "Diamond",
+          "sapphire": "Sapphire",
+          "emerald": "Emerald",
+          "ruby": "Ruby"
+        },
+        "availability": {
+          "label": "Availability",
+          "inStock": "In stock",
+          "onOrder": "On order"
+        }
+      },
+      "sort": {
+        "placeholder": "Sort by",
+        "price_asc": "Price: Low to High",
+        "price_desc": "Price: High to Low",
+        "rating": "Popularity"
+      }
+}
 

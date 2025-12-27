@@ -1,8 +1,7 @@
 import { Form, Input, Button,   } from "antd";
-// import { FORM_TITLE } from "./consts"; Typography
 import styles from "./styles.module.css"
 
-// const { Title } = Typography;
+
 export const FooterContactForm = ()=> {
 
     const onFinish = (values: string) => {
@@ -11,7 +10,6 @@ export const FooterContactForm = ()=> {
 
     return (
         <div className={styles.emailWrapper}>
-             {/* <Title level={3}>{FORM_TITLE}</Title>    */}
              <Form 
                 name="emailForm"
                 layout="inline"
@@ -25,9 +23,8 @@ export const FooterContactForm = ()=> {
                 { type: "email", message: "Please enter a valid email address" }
                 ]}
                 >
-                    <Input placeholder="Enter your email" />
+                    <Input placeholder="Enter your email" variant="underlined" />
                 </Form.Item>
-
                 <Form.Item>
                  <Button type="primary" htmlType="submit">Subscribe</Button>
                 </Form.Item>

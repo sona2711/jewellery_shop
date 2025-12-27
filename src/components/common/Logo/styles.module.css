@@ -1,8 +1,9 @@
 .logoWrapper {
-  /* display: flex;
-  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1rem; */
+  gap: 1rem;
+  margin: 25px 0;
   cursor: pointer;
 }
 

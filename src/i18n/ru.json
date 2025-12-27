@@ -115,7 +115,42 @@
       "cufflinks": {
         "classic": "Классические запонки"
       }
-    }
+    },
+    "filters": {
+        "category": {
+          "label": "Категория",
+          "ring": "Кольцо",
+          "necklace": "Ожерелье",
+          "bracelet": "Браслет",
+          "pendant": "Кулон"
+        },
+        "metal": {
+          "label": "Металл",
+          "gold": "Золото",
+          "silver": "Серебро",
+          "platinum": "Платина"
+        },
+        "stone": {
+          "label": "Камень",
+          "diamond": "Бриллиант",
+          "sapphire": "Сапфир",
+          "emerald": "Изумруд",
+          "ruby": "Рубин"
+        },
+        "availability": {
+          "label": "Наличие",
+          "inStock": "В наличии",
+          "onOrder": "Под заказ"
+        }
+      },
+      "sort": {
+        "placeholder": "Сортировать по",
+        "price_asc": "Цена: по возрастанию",
+        "price_desc": "Цена: по убыванию",
+        "rating": "Популярность"
+      }
+    
+    
   }
 
 

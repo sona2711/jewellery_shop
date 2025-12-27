@@ -111,3 +111,5 @@ export const getImageUrl = (imagePath: string): string => {
 export const formatPrice = (price: number): string => {
   return `$${price.toFixed(2)}`;
 };
+
+

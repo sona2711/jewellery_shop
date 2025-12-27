@@ -6,9 +6,10 @@ import styles from "./styles.module.css";
 
 export const BookingCartIcon = ({count}: BookingCartIconProps) => {
     return (
-            <Badge count={count} showZero>
+            <Badge count={count} > 
                 <ShoppingOutlined  className={styles.cartIcon}/>
             </Badge> 
 
     )
 }
+//showZero

@@ -1,16 +1,15 @@
 .footer {
     background: #0a0a0a !important;
     color: white !important;
+
 }
 
 .row {
-    margin-bottom: 24px;
-    margin-left: 0; 
-    margin-right: 0;
+    margin:0 !important;
 }
 
 .col {
-    margin-left: 1rem;
+    padding: 0 0 24px 0 !important;
     text-align: center;
 }
 
