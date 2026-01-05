@@ -1,12 +1,7 @@
-// Catalog/
-// Product/
-// Collections/
-// Services/
-// Booking/
-// Checkout/
-// About/
-// Contact/
-// FAQ/
-// Blog/
-// Account/
-// NotFound/
+export const Account = () => {
+    return (
+        <div>
+            <h1>Account</h1>
+        </div>
+    )
+}

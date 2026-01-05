@@ -1,11 +1,9 @@
-import { MainLayout } from './components/layout/MainLayout'
-import './App.css'
+import AppRouter from './router';
+import './App.css';
 
-
-const App = () => {
+export const App = () => {
   return (
-      <MainLayout/>
+    <AppRouter/>
   )
 }
 
-export  default App

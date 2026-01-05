@@ -27,7 +27,7 @@ export const AppFooter = () => {
             <Row className={styles.row} gutter={[24, 24]}> 
                 <Col span={24}>
                     <FooterContactForm />
-                    <SocialMedia/>
+                    
                 </Col>
             </Row>
             <Row className={styles.row} gutter={[24, 24]} >
@@ -36,6 +36,9 @@ export const AppFooter = () => {
                         <FooterColumn  key={section.title} title={section.title} links={section.links}/>
                     </Col>
                 ))}
+                <Col key="socialMedia" xs={24} sm={12} md={6}>
+                    <SocialMedia/>
+                </Col>
             </Row>
         </Footer>
     )

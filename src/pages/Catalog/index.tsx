@@ -4,7 +4,8 @@ import { PRODUCT_LIST } from "./const";
 import { SORT_OPTIONS } from "../../components/common/SortPanel/const";
 import { Filters} from "../../components/common/FiltersPanel";
 import { AppSort } from "../../components/common/SortPanel";
-import styles from "./styles.module.css"
+// import { Loader } from "../../components/common/Loader";
+import styles from "./styles.module.css";
 
 
 export const Catalog  = () => {
@@ -22,6 +23,9 @@ export const Catalog  = () => {
                     />
                 </div>
                 <ProductList  items={PRODUCT_LIST}/>
+                {/* <Loader size="large"/> */}
             </div>
     )
 }
+
+// add infinite scroll

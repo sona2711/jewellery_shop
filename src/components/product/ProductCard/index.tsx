@@ -7,9 +7,9 @@ import { formatPrice } from "./utils";  //getImageUrl,
 
 
 export const ProductCard = ({item, onBook, isFavorite, onToggleFavorite}: ProductCardProps) => {
-
   // const imageUrl = getImageUrl(image);
   const attributes: string[] = Object.values(item.attributes);
+
 
   return (
     <Card

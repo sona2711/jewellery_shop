@@ -1,12 +1,7 @@
-// Catalog/
-// Product/
-// Collections/
-// Services/
-// Booking/
-// Checkout/
-// About/
-// Contact/
-// FAQ/
-// Blog/
-// Account/
-// NotFound/
+export const Services = ()=>{
+    return (
+        <div>
+            <h1>Services</h1>
+        </div>
+    )
+}
