@@ -145,6 +145,32 @@
         "price_asc": "Price: Low to High",
         "price_desc": "Price: High to Low",
         "rating": "Popularity"
+      },
+      "product": {
+          "details": {
+            "title": "Details"
+          },
+          "care": {
+            "title": "Care",
+            "metalTitle": "Metal Care",
+            "metalText": "Do not use chemical jewelry cleaners. Gently wipe this item with a soft cloth and remove any remaining impurities using mild, diluted soap and warm water. Avoid contact with abrasive surfaces.",
+            "gemstoneTitle": "Gemstone Care",
+            "gemstoneText": "Use a soft cloth to gently wipe clean, then remove any remaining impurities with mild, diluted soap. Rinse with warm water and dry thoroughly before storing in the provided jewelry pouch.",
+            "serviceNote": "Cleaning services are available at Kassaman Boutique. Simply schedule an appointment."
+          },
+          "gifting": {
+            "title":"Gift Box",
+            "giftingText":"Each jewellery piece is carefully placed in our signature burgundy presentation box, accented with gold detailing and designed to protect and highlight every detail. Paired with our white branded gift bag and deep red ribbon handles, the packaging reflects a journey of craftsmanship, intention, and refinement—because every piece, like every story, is always in progress."
+          },
+          "attributes": {
+            "metal": "Metal",
+            "stone": "Stone",
+            "weight": "Weight",
+            "size": "Size",
+            "sku": "SKU"
+          }
+        }
       }
-}
+      
+
 

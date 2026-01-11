@@ -5,13 +5,13 @@ import men_cufflinks_yerevan from "../../assets/images/products/cufflinks/men_cu
 import cross_gold from "../../assets/images/products/pendants/cross_gold.jpg"
 export const PRODUCT_LIST: Product[] = [
   {
-    id: 1,
+    id: Date.now(),
     name: "Black Silver Bracelet",
     images: [
-      men_bracelet_black_silver,
+      men_bracelet_black_silver, men_bracelet_silver_cross, men_cufflinks_yerevan,men_cufflinks_yerevan, men_cufflinks_yerevan
     ],
     price: 1290,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "White Gold",
       stone: "Diamond",
@@ -30,7 +30,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Emerald Cut Engagement Ring",
     images: [cross_gold],
     price: 1890,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "Yellow Gold",
       stone: "Diamond",
@@ -49,7 +49,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Ruby Halo Ring",
     images: [men_cufflinks_yerevan],
     price: 950,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "Rose Gold",
       stone: "Ruby",
@@ -71,7 +71,7 @@ export const PRODUCT_LIST: Product[] = [
       men_bracelet_silver_cross,
     ],
     price: 2800,
-    availability: false,
+    availability: "out_of_stock",
     attributes: {
       metal: "White Gold",
       stone: "Diamond",
@@ -90,7 +90,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Gold Bangle",
     images: [men_bracelet_silver_cross],
     price: 720,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "Yellow Gold",
       weight: "7.1 g",
@@ -107,7 +107,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Pearl Drop Earrings",
     images: [cross_gold],
     price: 410,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "Silver",
       stone: "Pearl",
@@ -124,7 +124,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Diamond Stud Earrings",
     images: [men_cufflinks_yerevan],
     price: 780,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "White Gold",
       stone: "Diamond",
@@ -141,7 +141,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Sapphire Hoop Earrings",
     images: [men_bracelet_silver_cross],
     price: 920,
-    availability: false,
+    availability: "in_stock",
     attributes: {
       metal: "Yellow Gold",
       stone: "Sapphire",
@@ -159,7 +159,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Heart Pendant Necklace",
     images: [men_bracelet_black_silver ],
     price: 260,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "Silver",
       weight: "2.1 g",
@@ -175,7 +175,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Infinity Gold Necklace",
     images: [men_cufflinks_yerevan],
     price: 540,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "Yellow Gold",
       purity: "14K",
@@ -192,7 +192,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Emerald Pendant Necklace",
     images: [men_bracelet_silver_cross],
     price: 840,
-    availability: true,
+    availability:"in_stock",
     attributes: {
       metal: "White Gold",
       stone: "Emerald",
@@ -209,7 +209,7 @@ export const PRODUCT_LIST: Product[] = [
     name: "Men's Signet Ring",
     images: [men_bracelet_black_silver ],
     price: 620,
-    availability: true,
+    availability: "in_stock",
     attributes: {
       metal: "Silver",
       weight: "6.5 g",

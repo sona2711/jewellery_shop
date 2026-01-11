@@ -11,7 +11,7 @@ export const ProductList = ({items}: ProductListProps) => {
     <div className={styles.container}>
       <Row gutter={[5, 5]}>
         {items.map((item, index) => (
-          <Col key={String(index)} xs={24} sm={12} md={12} lg={6} xl={6}>
+          <Col key={String(index)} xs={12} sm={12} md={12} lg={6} xl={6}>
             <ProductCard 
             key={item.id} 
             item = {item}

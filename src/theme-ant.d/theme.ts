@@ -2,7 +2,7 @@ export const theme = {
   token: {
     colorPrimary: "#6B201D",
     colorInfo: "#FFFFFF",
-    colorTextBase: "#6B201D",
+    colorTextBase: "#000000",
     colorBgBase: "#FFFFFF",
 
     fontFamily: "Inter, system-ui, sans-serif",
@@ -15,7 +15,7 @@ export const theme = {
     colorBgContainer: "#FFFFFF",
     colorBorder: "#E8E8E8",
 
-    boxShadow: "0px 4px 16px rgba(0,0,0,0.09)",
+    boxShadow: "0px 4px 16px #000000",
 
     borderRadius: 0,
   },

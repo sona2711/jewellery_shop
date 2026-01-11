@@ -1,9 +1,9 @@
-import { createBrowserRouter, RouterProvider} from "react-router-dom"; // RouterProvider
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import { MainLayout } from "../components/layout/MainLayout";
 import { AuthLayout } from "../components/layout/AuthLayout";
 import { Home } from "../pages/Home";
 import { Catalog } from "../pages/Catalog";
-import { Product } from "../pages/Product";
+import { ProductPage } from "../pages/Product";
 import { Collections } from "../pages/Collections";
 import { Services } from "../pages/Services";
 import { Checkout } from "../pages/Checkout";
@@ -13,6 +13,8 @@ import { NotFound } from "../pages/NotFound";
 import { About } from "../pages/About";
 import { Account } from "../pages/Account";
 import { Blog } from "../pages/Blog";
+import { Login } from "../components/forms/Login";
+import { Register } from "../components/forms/Register";
 
 
 const router = createBrowserRouter([
@@ -29,8 +31,12 @@ const router = createBrowserRouter([
                 element: <Catalog/>
             },
             {
+                path: "/catalog/:categorySlug",
+                element: <Catalog/>
+            },
+            {
                 path: "/product/:id",
-                element: <Product/>
+                element: <ProductPage/>
             },
             {
                 path: "/collections",
@@ -71,9 +77,18 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: "/",
+        path: "auth",
         element: <AuthLayout/>,
-        children:[]
+        children:[
+            {
+                path: "login",
+                element: <Login/>
+            },
+            {
+                path: "register",
+                element: <Register/>
+            },
+        ]
     }
 ])
 

@@ -1,0 +1,24 @@
+:global(.ant-collapse-item)::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid gray;
+}
+
+.icon {
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.active {
+  transform: rotate(45deg);
+}
+
+.content {
+  display: block;
+  padding: 16px 0 24px 0;
+  color: var(--ant-color-text-secondary);
+  line-height: 1.6;
+}
+
+
+
