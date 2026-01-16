@@ -176,7 +176,33 @@
             "size": "Չափս",
             "sku": "Արտիկուլ"
           }
-        }
+        },
+        "productForm": {
+            "title": "",
+            "priceFrom": "Սկսած",
+            "labels": {
+              "size": "Չափս",
+              "delivery": "Առաքում",
+              "metal":"Մետաղ"
+            },
+            "sizeGuide": "Չափսերի ուղեցույց",
+            "button": {
+              "addToCart": "Ավելացնել զամբյուղ"
+            },
+            "delivery": {
+              "deliver": "Առաքում նշված հասցեով",
+              "pickup": "Վերցնել Kassaman բուտիկից"
+            },
+            "customerCare": "Կապ հաստատել հաճախորդների սպասարկման հետ"
+          },
+          "productCard": {
+            "cta": {
+            "view": "Դիտել մանրամասները",
+            "book": "Ամրագրել զարդը"
+            }
+          }
+        
+        
       }
       
     

@@ -1,12 +1,14 @@
 import { Card, Image, Button } from "antd";
 import { HeartOutlined, HeartFilled } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 import type { ProductCardProps } from "./types";
-import styles from "./styles.module.css";
-import { BUTTON_TEXT } from "./const";
 import { formatPrice } from "./utils";  //getImageUrl,
+import styles from "./styles.module.css";
+
 
 
 export const ProductCard = ({item, onBook, isFavorite, onToggleFavorite}: ProductCardProps) => {
+  const { t } = useTranslation();
   // const imageUrl = getImageUrl(image);
   const attributes: string[] = Object.values(item.attributes);
 
@@ -35,7 +37,7 @@ export const ProductCard = ({item, onBook, isFavorite, onToggleFavorite}: Produc
       }
       actions={[
         <Button key="book" type="text" onClick={onBook} block>
-          {BUTTON_TEXT.BOOK}
+          {t('productCard.cta.book')}
         </Button>,
       ]}
       >

@@ -1,0 +1,41 @@
+.container {
+  padding: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.card {
+  min-width: 180px;
+  flex: 0 0 auto;
+}
+
+.image {
+  height: 250px;
+  object-fit: cover;
+}
+
+.productPrice {
+  font-weight: 600;
+  color: black;
+}
+
+.slider {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* IE / Edge (old) */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Safari, Edge */
+.slider::-webkit-scrollbar {
+  display: none;
+}

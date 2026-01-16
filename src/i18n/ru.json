@@ -143,13 +143,13 @@
           "onOrder": "Под заказ"
         }
       },
-      "sort": {
+    "sort": {
         "placeholder": "Сортировать по",
         "price_asc": "Цена: по возрастанию",
         "price_desc": "Цена: по убыванию",
         "rating": "Популярность"
-      },
-      "product": {
+    },
+    "product": {
           "details": {
             "title": "Подробности"
           },
@@ -172,8 +172,31 @@
             "size": "Размер",
             "sku": "Артикул"
           }
-          
-        }
+      },
+      "productForm": {
+          "title": "Ожерелье Armory",
+          "priceFrom": "Цена от",
+          "labels": {
+            "size": "Размер",
+            "delivery": "Доставка",
+            "metal": "Металл"
+          },
+          "sizeGuide": "Таблица размеров",
+          "button": {
+            "addToCart": "Добавить в корзину"
+          },
+          "delivery": {
+            "deliver": "Доставка по адресу",
+            "pickup": "Самовывоз из бутика Kassaman"
+          },
+          "customerCare": "Связаться со службой поддержки клиентов"
+      },
+      "productCard": {
+        "cta": {
+        "view": "Посмотреть детали",
+        "book": "Забронировать изделие"
+      }
     }
+  }
 
 

@@ -16,11 +16,11 @@ export const AppFooter = () => {
  
     return(
         <Footer className={styles.footer}>
-            <Row justify="center" gutter={[24, 16]}> 
+            <Row justify="center" gutter={[24, 16]} style={{ margin: 0 }}> 
                 <Col className={styles.col} span={24}>
                     <Logo image={logo} />
                     <Text className={styles.note} style={{color:"white", fontWeight: 2, fontStyle: "italic"}}>      
-                    {FOOTER_TEXT}
+                        {FOOTER_TEXT}
                     </Text>
                 </Col>
             </Row>

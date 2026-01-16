@@ -39,18 +39,10 @@ export const getImageUrl = (imagePath: string): string => {
   // Use Vite's import.meta.url to properly resolve asset paths
   // Construct a relative path from this file to the assets folder
   try {
-    // Debug logging
-    console.log("getImageUrl - imagePath:", imagePath);
-    console.log("getImageUrl - cleanPath:", cleanPath);
-
     // This creates a proper URL that Vite can resolve
     // The path is relative to the current file location
     const relativePath = `../../assets/images/${cleanPath}`;
-    console.log("getImageUrl - relativePath:", relativePath);
     const url = new URL(relativePath, import.meta.url);
-    console.log("getImageUrl - url.href:", url.href);
-    console.log("getImageUrl - url.protocol:", url.protocol);
-    console.log("getImageUrl - url.pathname:", url.pathname);
 
     // In Vite dev mode, this should return a proper dev server URL
     // If it's a file:// URL, we need to extract the path correctly

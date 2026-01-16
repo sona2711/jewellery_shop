@@ -4,8 +4,10 @@ import styles from "./styles.module.css"
 
 export const FooterContactForm = ()=> {
 
-    const onFinish = (values: string) => {
-        console.log("Submitted values:", values);
+    const onFinish = (values: { email: string }) => {
+        // TODO: Implement email subscription logic
+        // e.g., call API endpoint to subscribe email
+        console.log(values)
       };
 
     return (

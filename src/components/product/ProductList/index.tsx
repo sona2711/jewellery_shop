@@ -15,7 +15,7 @@ export const ProductList = ({items}: ProductListProps) => {
             <ProductCard 
             key={item.id} 
             item = {item}
-            onBook={()=> navigate(`/product/:${item.id}`)}
+            onBook={()=> navigate(`/product/${item.id}`)}
             onToggleFavorite={()=> {}} 
             isFavorite={false}
             />

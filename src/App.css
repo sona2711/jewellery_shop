@@ -1,4 +1,4 @@
-.container {
+/* .container {
     margin: 0 100px;
 }
 
@@ -6,4 +6,8 @@
     .container {
         margin: 0 24px  
     }
-}
+} */
+
+* {
+    box-sizing: border-box;
+  }

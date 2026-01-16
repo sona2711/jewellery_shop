@@ -1,0 +1,49 @@
+.container {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .price {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sizeGuide {
+    padding: 0;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .sizeButton {
+    min-width: 48px;
+    height: 40px;
+    border-radius: 0;
+  }
+  
+  .radioGroup :global(.ant-radio-wrapper) {
+    font-size: 14px;
+  }
+  
+  .addToBag {
+    height: 48px;
+    border-radius: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  

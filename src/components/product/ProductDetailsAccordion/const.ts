@@ -1,7 +1,11 @@
+import giftBox from "../../../assets/images/products/gift-box/Box.png";
+
+export const IMAGE = giftBox
 export const ACCORDION_KEYS = {
     DETAILS: "details",
     CARE: "care",
     GIFTING: "gifting",
+    
   } as const;
   
 export const ATTRIBUTE_LABEL_I18N: Record<string, string> = {
@@ -11,3 +15,4 @@ export const ATTRIBUTE_LABEL_I18N: Record<string, string> = {
     size: "product.attributes.size",
     sku: "product.attributes.sku",
 };
+

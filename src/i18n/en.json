@@ -169,7 +169,33 @@
             "size": "Size",
             "sku": "SKU"
           }
-        }
+        },
+        "productForm": {
+            "title": "",
+            "priceFrom": "Starting at",
+            "labels": {
+              "size": "Size",
+              "delivery": "Delivery",
+              "metal":"Metal"
+            },
+            "sizeGuide": "Size guide",
+            "button": {
+              "addToCart": "Add to cart"
+            },
+            "delivery": {
+              "deliver": "Deliver to address",
+              "pickup": "Pick up at Kassaman boutique"
+            },
+            "customerCare": "Contact customer care"
+          },
+          "productCard": {
+            "cta": {
+            "view": "View details",
+            "book": "Book this item"
+            }
+          }
+        
+        
       }
       
 
