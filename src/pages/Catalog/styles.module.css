@@ -9,6 +9,13 @@
     align-items: center;
     width: 98%;
 }
+.products_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    /* width: 98%; */
+}
 
 @media (max-width: 768px) {
     .filters_wrapper {
