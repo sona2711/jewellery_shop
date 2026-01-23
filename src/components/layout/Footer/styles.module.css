@@ -13,11 +13,4 @@
     text-align: center;
 }
 
-.note {
-    color: "white" !important;
-}
-@media (max-width: 768px){
-    .contacts-wrapper {
-        flex-direction: column;
-    }
-}
+

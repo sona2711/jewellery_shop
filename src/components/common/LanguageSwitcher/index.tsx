@@ -1,25 +1,9 @@
-import { items} from "./const";
-// import { Select } from "antd";
-// import type { LanguageSwitcherProps } from "./types";
- import styles from "./styles.module.css";
-
-// export const LanguageSwitcher = ({language, handleChange}: LanguageSwitcherProps) => {
-
-//     return (
-//               <Select className={styles.languageSwitcher}
-//               value={language}
-//               onChange={handleChange}
-//               options={[... LANGUAGE_OPTIONS ]}
-//               />
-//     )
-// }
-
-
 import { Dropdown } from "antd";
+import { items} from "./const";
 import type { LanguageSwitcherProps } from "./types";
+import styles from "./styles.module.css";
 
 export const LanguageSwitcher = ({ language, handleChange }: LanguageSwitcherProps) => {
- 
 
   return (
     <Dropdown
@@ -30,7 +14,7 @@ export const LanguageSwitcher = ({ language, handleChange }: LanguageSwitcherPro
       trigger={["click"]}
     >
       <span className={styles.languageSwitcher}>
-        {language.toUpperCase()}
+        {language?.toUpperCase()}
       </span>
     </Dropdown>
   );

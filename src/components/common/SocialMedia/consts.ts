@@ -5,7 +5,7 @@ export const SOCIAL_MEDIA: SocialMediaItem[] = [
     {
       key: "facebook",
       label: "Facebook",
-      href: "https://www.facebook.com",
+      href: "https://www.facebook.com/p/Kassaman-100063686071188/",
       icon: FacebookOutlined,
     },
     {
