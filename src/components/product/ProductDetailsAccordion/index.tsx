@@ -1,4 +1,4 @@
-import { Collapse, Typography, Descriptions, Image } from "antd";
+import { Collapse, Typography, Descriptions} from "antd";
 import { PlusOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import type { DetailsAccordionProps } from "./types";
@@ -10,8 +10,7 @@ const { Text, Title } = Typography;
 
 export const ProductDetailsAccordion = ({attributes}: DetailsAccordionProps) => {
   const { t } = useTranslation();
-  const attributeArr = Object.entries(attributes);
-
+  const attributeArr = attributes ? Object.entries(attributes) : [];
   const items = [
     {
       key: ACCORDION_KEYS.DETAILS,
@@ -64,7 +63,8 @@ export const ProductDetailsAccordion = ({attributes}: DetailsAccordionProps) => 
         <><Text className={styles.content}>
           {t("product.gifting.giftingText")}
         </Text>
-        <Image src={IMAGE} alt="Gift Box" width={200}/></>
+        <img src={IMAGE} alt="Gift Box" width={200}/>
+        </>
       ),
     },
   ];

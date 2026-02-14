@@ -1,0 +1,17 @@
+import type { Product } from "../../../types/product";
+import { COLLECTION_IMAGES, placeholder } from "./imageRegistry";
+
+export const resolveProductImages = (product: Product): string[] => {
+  const { id, category, collection } = product;
+
+  const pool =
+    collection &&
+    COLLECTION_IMAGES[collection]?.[category];
+
+  if (pool && pool.length > 0) {
+    const index = id % pool.length;
+    return pool[index];
+  }
+
+  return [placeholder];
+};

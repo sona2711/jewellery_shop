@@ -3,7 +3,7 @@ import { MainLayout } from "../components/layout/MainLayout";
 import { AuthLayout } from "../components/layout/AuthLayout";
 import { Home } from "../pages/Home";
 import { Catalog } from "../pages/Catalog";
-import { ProductDetailsPage } from "../pages/ProductDetailsPage";
+import { ProductPage } from "../pages/ProductPage";
 import { Collections } from "../pages/Collections";
 import { Services } from "../pages/Services";
 import { Checkout } from "../pages/Checkout";
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/product/:id",
-        element: <ProductDetailsPage />,
+        element: <ProductPage />,
       },
       {
         path: "/collections",

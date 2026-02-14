@@ -1,36 +1,45 @@
 import { useState, useMemo } from "react";
-import { Typography, Button, Radio, Space } from "antd";
+import { Typography, Button, Radio, Space, Tag } from "antd";
 import { useTranslation } from "react-i18next";
-import styles from "./styles.module.css";
-import { calculatePrice } from "./utils";
 
-import type { PDPConfig, ProductFormValues } from "./types";
+import type { Product } from "../../../types/product";
+import type { ProductFormValues } from "./types";
+import { AVAILABILITY_COLOR } from "./const";
+import { calculatePrice } from "./utils";
+import styles from "./styles.module.css";
 
 const { Title, Text } = Typography;
 
-export const ProductForm = ({ pdp}: { pdp: PDPConfig,}) => {
+export const ProductForm = ({ product}: { product: Product}) => {
   const { t } = useTranslation();
   const [values, setValues] = useState<ProductFormValues>({
-    size: pdp.sizes?.find((s) => s.available)?.value,
-    metal: pdp.metals?.find((m) => m.available)?.value,
+    size: product.options?.sizes?.find((s) => s.available)?.value,
+    metal: product.options?.metals?.find((m) => m.available)?.value,
     delivery: "deliver",
     quantity: 1,
   });
 
-  const price = useMemo(() => calculatePrice(pdp, values), [pdp, values]);
+  const price = useMemo(() => calculatePrice(product, values), [product, values]);
 
   return (
     <div className={styles.container}>
+      <div>
+        <Title level={2}>{product.name}</Title>
+        <Text type="secondary">{product.description}</Text>
+      </div>
+      <Tag color={AVAILABILITY_COLOR[product.availability]}>
+            {product.availability}
+      </Tag>
       <Title level={4} className={styles.price}>
         ${price.toLocaleString()}
       </Title>
-      {pdp.sizes && (
+      {product.options?.sizes && (
         <div className={styles.section}>
           <div className={styles.sectionHeader}>
             <Text strong>{t("productForm.labels.size")}</Text>
           </div>
           <Space wrap>
-            {pdp.sizes.map((size) => (
+            {product.options?.sizes.map((size) => (
               <Button
                 key={size.value}
                 disabled={!size.available}
@@ -45,11 +54,11 @@ export const ProductForm = ({ pdp}: { pdp: PDPConfig,}) => {
           </Space>
         </div>
       )}
-      {pdp.metals && (
+      {product.options?.metals && (
         <div className={styles.section}>
           <Text strong>{t("productForm.labels.metal")}</Text>
           <Space wrap>
-            {pdp.metals.map((metal) => (
+            {product.options?.metals.map((metal) => (
               <Button
                 key={metal.value}
                 disabled={!metal.available}
@@ -75,7 +84,7 @@ export const ProductForm = ({ pdp}: { pdp: PDPConfig,}) => {
           <Radio value="pickup">{t("productForm.delivery.pickup")}</Radio>
         </Space>
       </Radio.Group>
-      <Button type="primary" size="large" block>
+      <Button type="primary" size="large" block onClick={()=> {console.log(values)}}>
         {t("productForm.button.addToCart")}
       </Button>
     </div>

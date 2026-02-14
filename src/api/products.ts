@@ -1,11 +1,11 @@
-import { PRODUCTS_MOCK } from '../mocks/products.mock';
+import { PRODUCTS_MOCK } from "./mock/index";
 import type { Product } from '../types/product';
 
 const delay = (ms: number) =>
   new Promise((resolve) => setTimeout(resolve, ms));
 
 export const getProducts = async (): Promise<Product[]> => {
-  console.log('GET /api/products');
+  console.log('GET /api/products', PRODUCTS_MOCK);
   await delay(500);
   return PRODUCTS_MOCK;
 };

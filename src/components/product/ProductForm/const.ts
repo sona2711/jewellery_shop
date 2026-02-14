@@ -1,4 +1,4 @@
-import type { ProductCategory } from '../../../types/product';
+import type { ProductAvailability, ProductCategory } from '../../../types/product';
 
 export type ProductFormConfig = {
   hasSize: boolean;
@@ -56,5 +56,11 @@ export const SIZE_PRESETS = {
     necklace: [18, 20, 22, 24, 26],
     bracelet: ['S', 'M', 'L'],
     pendant: ['S', 'M', 'L'],
+  };
+  
+  export const AVAILABILITY_COLOR: Record<ProductAvailability, string> = {
+    in_stock: "green",
+    out_of_stock: "red",
+    preorder: "gold",
   };
   

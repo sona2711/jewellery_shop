@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { fetchProducts } from "../../services/product.service";
-import type { Product } from "../../types/product";
 import { ProductList } from "../../components/product/ProductList";
 import { SORT_OPTIONS } from "../../components/common/SortPanel/const";
 import { Filters } from "../../components/common/FiltersPanel";
 import { AppSort } from "../../components/common/SortPanel";
-import type { FilterValues } from "../../components/common/FiltersPanel/types";
 import { Loader } from "../../components/common/Loader";
+import type { Product } from "../../types/product";
+import type { FilterValues } from "../../components/common/FiltersPanel/types";
 import styles from "./styles.module.css";
 
 export const Catalog = () => {

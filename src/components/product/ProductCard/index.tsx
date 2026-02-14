@@ -4,13 +4,13 @@ import { useTranslation } from "react-i18next";
 import type { ProductCardProps } from "./types";
 import { formatPrice } from "./utils";  //getImageUrl,
 import styles from "./styles.module.css";
+import type { ProductAttributes } from "../../../types/product";
 
 
 
 export const ProductCard = ({item, onBook, isFavorite, onToggleFavorite}: ProductCardProps) => {
   const { t } = useTranslation();
-  // const imageUrl = getImageUrl(image);
-  const attributes: string[] = Object.values(item.attributes);
+  const attributes: string[] = Object.values(item.attributes  as ProductAttributes);
 
 
   return (

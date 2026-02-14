@@ -1,4 +1,4 @@
-import giftBox from "../../../assets/images/products/gift-box/Box.png";
+import giftBox from "../../../assets/images/service/gifting2.jpg";
 
 export const IMAGE = giftBox
 export const ACCORDION_KEYS = {
