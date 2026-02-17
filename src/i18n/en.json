@@ -114,25 +114,36 @@
       }
     },
     "filters": {
-        "category": {
+      "category": {
           "label": "Category",
           "ring": "Ring",
+          "weddingRing": "Wedding Ring",
           "necklace": "Necklace",
           "bracelet": "Bracelet",
+          "earring": "Earring",
+          "cufflink": "Cufflink",
           "pendant": "Pendant"
         },
         "metal": {
           "label": "Metal",
-          "gold": "Gold",
-          "silver": "Silver",
-          "platinum": "Platinum"
+          "gold585": "Gold 14K",
+          "gold750": "Gold 18K",
+          "silver925": "Silver",
+          "silver925Rhodium": "Rhodium Plated Silver"
         },
-        "stone": {
+       "stone": {
           "label": "Stone",
           "diamond": "Diamond",
-          "sapphire": "Sapphire",
+          "naturalDiamond": "Natural Diamond",
           "emerald": "Emerald",
-          "ruby": "Ruby"
+          "blueSapphire": "Blue Sapphire",
+          "topazLondonBlue": "Natural London Blue Topaz",
+          "topazSwissBlue": "Swiss Blue Topaz",
+          "topazImperialBrazilian": "Brazilian Imperial Topaz",
+          "tourmalineGreen": "Green Tourmaline",
+          "tourmalineRubellite": "Rubellite Tourmaline",
+          "swarovski": "Swarovski Crystal",
+          "onyx": "Natural Onyx"
         },
         "availability": {
           "label": "Availability",
@@ -156,7 +167,7 @@
             "metalText": "Do not use chemical jewelry cleaners. Gently wipe this item with a soft cloth and remove any remaining impurities using mild, diluted soap and warm water. Avoid contact with abrasive surfaces.",
             "gemstoneTitle": "Gemstone Care",
             "gemstoneText": "Use a soft cloth to gently wipe clean, then remove any remaining impurities with mild, diluted soap. Rinse with warm water and dry thoroughly before storing in the provided jewelry pouch.",
-            "serviceNote": "Cleaning services are available at Kassaman Boutique. Simply schedule an appointment."
+            "serviceNote": "Cleaning services are available at Kassaman Boutique:"
           },
           "gifting": {
             "title":"Gift Box",
