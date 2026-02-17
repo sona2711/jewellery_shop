@@ -1,11 +1,29 @@
 .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 50%;
     margin-top: 10px;
     padding: 1rem; 
+    color: black !important;
 }
 
 .select {
+    width: 100%;
     border-radius: 1px !important;
     border: none !important;
     color: black !important;
 }
 
+@media (max-width: 785px){
+    .filters {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .select {
+        width: 100%;
+        outline: none !important;
+    }
+}

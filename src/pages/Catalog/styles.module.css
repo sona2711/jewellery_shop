@@ -1,24 +1,23 @@
 .container {
-   background-color: #fcf8f8;
-   width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    background-color: #fcf8f8;
+    width: 100%;
+    margin-top: 16px;
 }
 
 .filters_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 98%;
+    width: 100%;
+    padding: 0 12px;
 }
 .products_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 60vh;
-    /* width: 98%; */
 }
-
-@media (max-width: 768px) {
-    .filters_wrapper {
-        display: none;
-    }
-  } 

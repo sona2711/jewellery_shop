@@ -38,6 +38,7 @@ export const theme = {
     },
     Select: {
       colorText: "#6B201D",
+      color: "#0a0a0a"
     },
   },
 };

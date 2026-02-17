@@ -1,10 +1,12 @@
 
-import { Row, Col, Select, Slider } from "antd";
+import {Select, Slider } from "antd";
 import { useTranslation } from "react-i18next";
+
 import type { FilterProps, FilterValues } from "./types";
 import { CATEGORY_OPTIONS, METAL_OPTIONS, STONE_OPTIONS, AVAILABILITY_OPTIONS, PRICE_MIN, PRICE_MAX } from "./const";
 import { isValidPriceRange } from "./utils";
 import styles from "./styles.module.css";
+
 
 
 export const Filters = ({ value, onChange }: FilterProps) => {
@@ -25,8 +27,8 @@ export const Filters = ({ value, onChange }: FilterProps) => {
       }
 
 return (
-        <Row  className={styles.filters} gutter={[16, 16]} align="middle">
-            <Col>
+        <div className={styles.filters}>
+
                 <Select
                 className={styles.select}
                 allowClear
@@ -38,8 +40,7 @@ return (
                 label: t(o.labelKey),
                 }))}
                 />
-            </Col>
-            <Col>
+           
                 <Select
                 className={styles.select}
                 allowClear
@@ -51,8 +52,6 @@ return (
                 label: t(o.labelKey),
                 }))}
                 />
-            </Col>
-            <Col>
                 <Select
                 className={styles.select}
                 allowClear
@@ -64,8 +63,6 @@ return (
                 label: t(o.labelKey),
                 }))}
                 />
-            </Col>
-            <Col>
                 <Slider
                 range
                 min={PRICE_MIN}
@@ -73,8 +70,6 @@ return (
                 value={value?.price}
                 onChange={handleChange}
                 />
-            </Col>
-            <Col>
                 <Select
                 className={styles.select}
                 allowClear
@@ -86,8 +81,7 @@ return (
                 label: t(o.labelKey),
                 }))}
                 />
-            </Col>
-        </Row>    
+            </div>
     )}
 
 
