@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Layout } from "antd";
+import { Layout, Flex } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 // import { getImageUrl } from "./utils";
 import { BookingCartIcon } from "../../common/BookingCartIcon";
 import { LanguageSwitcher } from "../../common/LanguageSwitcher";
-import { MenuDisplay } from "../../common/MainMenu";
+import {MainMenu  } from "../../common/MainMenu";
 import { MenuMobile } from "../../common/MobileMenu";
 import { Logo } from "../../common/Logo";
 import type { HeaderProps } from "./types";
@@ -21,17 +21,21 @@ export const Header = ({ image, cartItemsCount = 0 }: HeaderProps) => {
 
   return (
     <AntHeader className={styles.header}>
-      <MenuMobile />
-      <Logo image={image} />
-      <div className={styles.navWrapper}>
-          <MenuDisplay />
-          <SearchOutlined className={styles.searchIcon} />
+      <Flex style={{ width: '100%', padding: '0 1rem'}} gap="middle" justify="space-between" align="center">
+        <Flex gap="middle" justify="flex-start">
+          <MenuMobile />
           <LanguageSwitcher
             language={i18n.language}
             handleChange={handleLanguageChange}
-          />
+            />
+        </Flex>
+        <Logo image={image} />  
+        <Flex gap="middle" justify="flex-end">
+          <SearchOutlined className={styles.searchIcon} />
           <BookingCartIcon count={cartItemsCount} /> 
-      </div>
+          </Flex>
+      </Flex>
+      <MainMenu />
     </AntHeader>
   );
 };

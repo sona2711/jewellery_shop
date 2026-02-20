@@ -23,6 +23,7 @@ export const generateProducts = (itemsPerCollection = 20): Product[] => {
           images: [],
           category,
           collection: config.collection,
+          collectionSlug: config.slug ,
           price,
           basePrice: price,
           availability: "in_stock",

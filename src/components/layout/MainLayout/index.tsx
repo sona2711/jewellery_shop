@@ -12,7 +12,7 @@ export const MainLayout = () => {
     return (
         <Layout className={styles.main_container}>
             <Header image={Logo} cartItemsCount={0}/>
-            <main>
+            <main className={styles.main}>
                 <Outlet/>
             </main>
             <AppFooter/>

@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
+import { useParams } from "react-router-dom";
 import { Grid } from "antd";
 
 import type { Product } from "../../types/product";
@@ -16,20 +17,42 @@ import styles from "./styles.module.css";
 const { useBreakpoint } = Grid;
 
 
-
 export const Catalog = () => {
+  const { gender, category, collectionSlug } = useParams<{
+    gender?: string;
+    category?: string;
+    collectionSlug?: string;
+  }>();
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
-  const screens = useBreakpoint();
+  const [sortValue, setSortValue] = useState<string | undefined>();
+  const [filters, setFilters] = useState<FilterValues | undefined>();
+  
+  const filteredProducts = useMemo(() => {
+    let  result = [...products];
 
+    if (collectionSlug) {
+      result = result.filter((p) => p.collectionSlug === collectionSlug);
+  
+    } else if (gender && category) {
+      result = result.filter(
+        (p) => p.gender === gender && p.category?.includes(category)
+      );
+    }
+  
+  
+    return result;
+  }, [products, collectionSlug, gender, category]
+  )
+
+  const screens = useBreakpoint();
   useEffect(() => {
     fetchProducts()
       .then(setProducts)
       .finally(() => setLoading(false));
   }, []);
 
-  const [sortValue, setSortValue] = useState<string | undefined>();
-  const [filters, setFilters] = useState<FilterValues | undefined>();
+
 
   return (
     <div className={styles.container}>
@@ -49,7 +72,7 @@ export const Catalog = () => {
       <div className={styles.products_wrapper}>
         {loading && <Loader size={"large"} />}
 
-        <ProductList items={products} />
+        <ProductList items={filteredProducts} />
       </div>
     </div>
   );

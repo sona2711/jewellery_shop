@@ -10,27 +10,21 @@ export type MenuSection = {
     links: MenuLink[];
 };
   
-export type MenuKey = "women" | "men" | "collection" | "giftGuide" | "kassamanWorld" | "contactUs"
+export type MenuKey = "women" | "men" | "collections" |  "exclusive"| "giftGuide" | "world" | "contact"
 
-export type MenuItem = {
-  key: string;      
+
+
+export type MenuTab = {
+  key: string;   
+  labelKey: string;   
   image?: string;           
   sections: MenuSection[]; 
 };
 
-export type MenuContent = Record<MenuKey, MenuItem>;
+export type MenuContent = MenuTab[];
 
 export type MenuProps = {
   active: MenuKey;
   onChange: (key: MenuKey) => void;
   content: MenuContent;
 };
-
-
-// type MenuItemType = {
-//   key: string;
-//   label?: ReactNode;
-//   icon?: ReactNode;
-//   children?: MenuItemType[];  // <-- used for SubMenu
-//   type?: "group";             // optional grouping
-// };

@@ -15,7 +15,7 @@ export const AppSort = ({ options, value, onChange, placeholderKey }: SortProps)
                 value={value}
                 onChange={onChange}
                 placeholder={placeholderKey ? t(placeholderKey) : t("select.sort")}
-                style={{ width: 100 }}
+                className={styles.sort}
                 allowClear
                 >
                     {options.map((option) => (

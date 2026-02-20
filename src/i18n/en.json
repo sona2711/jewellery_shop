@@ -36,44 +36,62 @@
       "terms": "Terms & Conditions"
     }
   },
-   "menu": {
+  "menu": {
       "labels": {
         "women": "Women",
         "men": "Men",
-        "collection": "Collection",
+        "collections": "Collections",
+        "exclusive": "Exclusive & Authorship",
         "giftGuide": "Gift Guide",
-        "kassamanWorld": "Kassaman World",
-        "contactUs": "Contact Us"
+        "world": "Kassaman World",
+        "contact": "Contact Us"
       },
+  
       "women": {
-        "rings": "Rings",
-        "bracelets": "Bracelets",
+        "anna": "Anna Collection",
+        "weddingRings": "Wedding Rings",
+        "earrings": "Earrings",
         "necklaces": "Necklaces",
-        "pendants": "Pendants"
+        "bracelets": "Bracelets"
       },
   
       "men": {
-        "cufflinks": "Cufflinks",
+        "theFather": "The Father",
+        "signature": "Signature",
+        "alpha": "Alpha",
+        "sparks": "Sparks",
+        "suitAndTie": "Suit & Tie",
+        "yerevan": "Yerevan",
+        "snowflake": "Snowflake",
+        "ornament": "Ornament",   
+        "rings": "Rings",
         "bracelets": "Bracelets",
-        "rings": "Rings"
+        "pendants": "Pendants",
+        "cufflinks": "Cufflinks",
+        "necklaces": "Necklaces"
       },
   
-      "collection": {
-        "novelties": "New Arrivals",
-        "latestCollection": "Latest Collection",
-        "limitedEdition": "Limited Edition",
-        "designerPicks": "Designer Picks",
-        "trendingNow": "Trending Now"
+      "collections": {
+        "anna": "Anna",
+        "the-father": "The Father",
+        "signature": "Signature",
+        "alpha": "Alpha",
+        "sparks": "Sparks",
+        "suit-and-tie": "Suit & Tie",
+        "yerevan": "Yerevan",
+        "snowflake": "Snowflake",
+        "ornament": "Ornament",
+        "exclusive-and-authorship": "Exclusive & Authorship"
       },
   
       "giftGuide": {
-        "trendingGifts": "Trending Gifts",
-        "jewelryGifts": "Jewelry Gifts",
-        "personalizedGifts": "Personalized Gifts",
-        "luxuryGifts": "Luxury Gifts"
+        "forHer": "Gifts for Her",
+        "forHim": "Gifts for Him",
+        "wedding": "Wedding Gifts",
+        "luxury": "Luxury Gifts"
       },
   
-      "kassamanWorld": {
+      "world": {
         "ourStory": "Our Story",
         "craftsmanship": "Craftsmanship",
         "materials": "Materials",
@@ -81,36 +99,10 @@
       },
   
       "contact": {
-        "emailUs": "Email Us",
+        "email": "Email Us",
         "phone": "Phone",
-        "storeLocations": "Store Locations",
+        "stores": "Store Locations",
         "faq": "FAQ"
-      },
-  
-      "rings": {
-        "engagement": "Engagement Rings",
-        "weddingBands": "Wedding Bands",
-        "diamondRings": "Diamond Rings"
-      },
-  
-      "bracelets": {
-        "goldBracelets": "Gold Bracelets",
-        "diamondBracelets": "Diamond Bracelets",
-        "chainBracelets": "Chain Bracelets"
-      },
-  
-      "necklaces": {
-        "goldNecklaces": "Gold Necklaces",
-        "diamondNecklaces": "Diamond Necklaces"
-      },
-  
-      "pendants": {
-        "personalizedPendants": "Personalized Pendants",
-        "gemstonePendants": "Gemstone Pendants"
-      },
-  
-      "cufflinks": {
-        "classic": "Classic Cufflinks"
       }
     },
     "filters": {

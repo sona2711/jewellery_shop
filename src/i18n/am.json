@@ -42,84 +42,74 @@
   },
   
   "menu": {
-      "labels": {
-        "women": "Կանայք",
-        "men": "Տղամարդիկ",
-        "collection": "Հավաքածու",
-        "giftGuide": "Նվերների ուղեցույց",
-        "kassamanWorld": "KASSAMAN աշխարհը",
-        "contactUs": "Կապ"
-  },
-      "women": {
-        "rings": "Մատանի",
-        "bracelets": "Ապարանջան",
-        "necklaces": "Վզնոց",
-        "pendants": "Կախազարդ"
-      },
-  
-      "men": {
-        "cufflinks": "Ճարմանդ",
-        "bracelets": "Ապարանջան",
-        "rings": "Մատանի",
-        "pendants": "Կախազարդ"
-      },
-  
-      "collection": {
-        "novelties": "Նորույթներ",
-        "latestCollection": "Վերջին հավաքածու",
-        "limitedEdition": "Սահմանափակ թողարկում",
-        "designerPicks": "Դիզայների ընտրածը",
-        "trendingNow": "Հանրաճանաչ այժմ"
-      },
-  
-      "giftGuide": {
-        "trendingGifts": "Հանրաճանաչ նվերներ",
-        "jewelryGifts": "Զարդերի նվերներ",
-        "personalizedGifts": "Անհատականացված նվերներ",
-        "luxuryGifts": "Լյուքս նվերներ"
-      },
-  
-      "kassamanWorld": {
-        "ourStory": "Մեր պատմությունը",
-        "craftsmanship": "Որակի մշակում",
-        "materials": "Նյութեր",
-        "sustainability": "Կայունություն"
-      },
-  
-      "contact": {
-        "emailUs": "Էլ. փոստ",
-        "phone": "Հեռախոս",
-        "storeLocations": "Հասցե",
-        "faq": "ՀՏՀ"
-      },
-  
-      "rings": {
-        "engagement": "Նշանադրության մատանիներ",
-        "weddingBands": "Հարսանեկան մատանիներ",
-        "diamondRings": "Արքայական ադամանդե մատանիներ"
-      },
-  
-      "bracelets": {
-        "goldBracelets": "Ոսկե ապարանջան",
-        "diamondBracelets": "Ադամանդե ապարանջան",
-        "chainBracelets": "Շղթայական ապարանջան"
-      },
-  
-      "necklaces": {
-        "goldNecklaces": "Ոսկե վզնոց",
-        "diamondNecklaces": "Ադամանդե վզնոց"
-      },
-  
-      "pendants": {
-        "personalizedPendants": "Անհատականացված կախազարդեր",
-        "gemstonePendants": "Ակնեղենով կախազարդեր"
-      },
-  
-      "cufflinks": {
-        "classic": "Դասաական Ճարմանդ",
-        "personalized": "Անհատականացված"
-      }
+    "labels": {
+      "women": "Կանացի",
+      "men": "Տղամարդկանց",
+      "collections": "Հավաքածուներ",
+      "exclusive": "Էքսկլյուզիվ և Հեղինակային",
+      "giftGuide": "Նվերների ուղեցույց",
+      "world": "Kassaman Աշխարհ",
+      "contact": "Կապ մեզ հետ"
     },
+
+    "women": {
+      "anna": "Anna հավաքածու",
+      "weddingRings": "Ամուսնական մատանիներ",
+      "earrings": "Ականջօղեր",
+      "necklaces": "Վզնոցներ",
+      "bracelets": "Ապարանջաններ"
+    },
+
+    "men": {
+      "theFather": "The Father",
+      "signature": "Signature",
+      "alpha": "Alpha",
+      "sparks": "Sparks",
+      "suitAndTie": "Suit & Tie",
+      "yerevan": "Yerevan",
+      "snowflake": "Snowflake",
+      "ornament": "Ornament",
+      "rings": "Մատանիներ",
+      "bracelets": "Ապարանջաններ",
+      "pendants": "Կախազարդեր",
+      "cufflinks": "Ճարմանդներ",
+      "necklaces": "Վզնոցներ"
+    },
+
+    "collections": {
+      "anna": "Anna",
+      "the-father": "The Father",
+      "signature": "Signature",
+      "alpha": "Alpha",
+      "sparks": "Sparks",
+      "suit-and-tie": "Suit & Tie",
+      "yerevan": "Yerevan",
+      "snowflake": "Snowflake",
+      "ornament": "Ornament",
+      "exclusive-and-authorship": "Էքսկլյուզիվ և Հեղինակային"
+    },
+
+    "giftGuide": {
+      "forHer": "Նվերներ նրա համար",
+      "forHim": "Նվերներ նրա համար",
+      "wedding": "Ամուսնական նվերներ",
+      "luxury": "Լյուքս նվերներ"
+    },
+
+    "world": {
+      "ourStory": "Մեր պատմությունը",
+      "craftsmanship": "Արհեստագործություն",
+      "materials": "Նյութեր",
+      "sustainability": "Կայուն զարգացում"
+    },
+
+    "contact": {
+      "email": "Գրել մեզ",
+      "phone": "Հեռախոս",
+      "stores": "Խանութների հասցեներ",
+      "faq": "Հաճախ տրվող հարցեր"
+    }
+  },
     "filters": {
         "category": {
           "label": "Կատեգորիա",

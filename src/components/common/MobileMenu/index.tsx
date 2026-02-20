@@ -1,24 +1,19 @@
 import { useState } from "react";
 import { MenuOutlined } from "@ant-design/icons";
 import { Drawer, Button, Menu } from "antd";
-import { MENU_CONTENT } from "../MainMenu/const";
 import { useTranslation } from "react-i18next";
-import { buildMenuItems } from "../MainMenu/utils";
+import { COLLECTIONS } from "../../../api/mock/products/const";
+import { buildMobileMenuItems } from "../MainMenu/utils"; // նույն utils-ից
 import styles from "./styles.module.css";
 
 export const MenuMobile = () => {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
 
-  const handleClickOpen = () => {
-    return setOpen(true);
-  };
+  const handleClickOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
-  const handleClose = () => {
-    return setOpen(false);
-  };
-
-  const translatedItems = buildMenuItems(MENU_CONTENT, t);
+  const menuItems = buildMobileMenuItems(t, COLLECTIONS);
 
   return (
     <div className={styles.menu_wrapper}>
@@ -28,7 +23,7 @@ export const MenuMobile = () => {
       <Drawer placement="left" onClose={handleClose} open={open}>
         <Menu
           mode="inline"
-          items={translatedItems}
+          items={menuItems}
           onClick={() => setOpen(false)}
         />
       </Drawer>

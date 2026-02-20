@@ -39,83 +39,75 @@
       "terms": "Условия и положения"
     }
   },
-    "menu": {
-      "labels": {
-        "women": "Женщины",
-        "men": "Мужчины",
-        "collection": "Коллекция",
-        "giftGuide": "Подарки",
-        "kassamanWorld": "Мир Kassaman",
-        "contactUs": "Контакты"
-      },
-      "women": {
-        "rings": "Кольца",
-        "bracelets": "Браслеты",
-        "necklaces": "Ожерелья",
-        "pendants": "Кулоны"
-      },
-  
-      "men": {
-        "cufflinks": "Запонки",
-        "bracelets": "Браслеты",
-        "rings": "Кольца"
-      },
-  
-      "collection": {
-        "novelties": "Новинки",
-        "latestCollection": "Последняя коллекция",
-        "limitedEdition": "Ограниченный выпуск",
-        "designerPicks": "Выбор дизайнеров",
-        "trendingNow": "Популярное сейчас"
-      },
-  
-      "giftGuide": {
-        "trendingGifts": "Популярные подарки",
-        "jewelryGifts": "Ювелирные подарки",
-        "personalizedGifts": "Индивидуальные подарки",
-        "luxuryGifts": "Роскошные подарки"
-      },
-  
-      "kassamanWorld": {
-        "ourStory": "Наша история",
-        "craftsmanship": "Мастерство",
-        "materials": "Материалы",
-        "sustainability": "Устойчивость"
-      },
-  
-      "contact": {
-        "emailUs": "Напишите нам",
-        "phone": "Телефон",
-        "storeLocations": "Местоположения магазинов",
-        "faq": "FAQ"
-      },
-  
-      "rings": {
-        "engagement": "Помолвочные кольца",
-        "weddingBands": "Свадебные кольца",
-        "diamondRings": "Бриллиантовые кольца"
-      },
-  
-      "bracelets": {
-        "goldBracelets": "Золотые браслеты",
-        "diamondBracelets": "Бриллиантовые браслеты",
-        "chainBracelets": "Цепочные браслеты"
-      },
-  
-      "necklaces": {
-        "goldNecklaces": "Золотые ожерелья",
-        "diamondNecklaces": "Бриллиантовые ожерелья"
-      },
-  
-      "pendants": {
-        "personalizedPendants": "Индивидуальные кулоны",
-        "gemstonePendants": "Кулоны с драгоценными камнями"
-      },
-  
-      "cufflinks": {
-        "classic": "Классические запонки"
-      }
+  "menu": {
+    "labels": {
+      "women": "Женщинам",
+      "men": "Мужчинам",
+      "collections": "Коллекции",
+      "exclusive": "Эксклюзив и Авторские",
+      "giftGuide": "Подарки",
+      "world": "Мир Kassaman",
+      "contact": "Связаться с нами"
     },
+
+    "women": {
+      "anna": "Коллекция Anna",
+      "weddingRings": "Обручальные кольца",
+      "earrings": "Серьги",
+      "necklaces": "Ожерелья",
+      "bracelets": "Браслеты"
+    },
+
+    "men": {
+      "theFather": "The Father",
+      "signature": "Signature",
+      "alpha": "Alpha",
+      "sparks": "Sparks",
+      "suitAndTie": "Suit & Tie",
+      "yerevan": "Yerevan",
+      "snowflake": "Snowflake",
+      "ornament": "Ornament",
+      "rings": "Кольца",
+      "bracelets": "Браслеты",
+      "pendants": "Подвески",
+      "cufflinks": "Запонки",
+      "necklaces": "Цепи"
+    },
+
+    "collections": {
+      "anna": "Anna",
+      "the-father": "The Father",
+      "signature": "Signature",
+      "alpha": "Alpha",
+      "sparks": "Sparks",
+      "suit-and-tie": "Suit & Tie",
+      "yerevan": "Yerevan",
+      "snowflake": "Snowflake",
+      "ornament": "Ornament",
+      "exclusive-and-authorship": "Эксклюзив и Авторские"
+    },
+
+    "giftGuide": {
+      "forHer": "Подарки для неё",
+      "forHim": "Подарки для него",
+      "wedding": "Свадебные подарки",
+      "luxury": "Премиальные подарки"
+    },
+
+    "world": {
+      "ourStory": "Наша история",
+      "craftsmanship": "Мастерство",
+      "materials": "Материалы",
+      "sustainability": "Устойчивость"
+    },
+
+    "contact": {
+      "email": "Написать нам",
+      "phone": "Телефон",
+      "stores": "Адреса магазинов",
+      "faq": "FAQ"
+    }
+  },
     "filters": {
         "category": {
           "label": "Категория",

@@ -1,17 +1,11 @@
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  height: 100px;
+:global .ant-layout-header {
+  padding: 0;
 }
-
-.navWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+.header {
   width: 100%;
+  height: min-content;
+  position: fixed;
+  z-index: 1000;
 }
 
 .searchIcon {
@@ -19,12 +13,3 @@
   cursor: pointer;
 }
 
-
-
-@media (max-width: 768px) {
-  .header {
-    height: 60px;
-    justify-content: space-between;
-    padding: 1rem 0;
-  }
-}

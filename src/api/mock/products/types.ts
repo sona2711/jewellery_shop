@@ -4,6 +4,7 @@ import type { ProductCategory, CollectionGender , ProductOption} from "../../../
 
 export type CollectionConfig = {
   collection: string;
+  slug: string;
   gender: CollectionGender;
   categories: ProductCategory[];
   metals: string[];

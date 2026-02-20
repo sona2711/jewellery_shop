@@ -43,6 +43,7 @@ export type Product = {
     availability: ProductAvailability;
     sku: string;
     collection?: string;
+    collectionSlug?: string;
     price: number;
     basePrice: number;
     description?: string;
@@ -55,7 +56,6 @@ export type Product = {
     isExclusive?: boolean;
     variants?: ProductVariant[];
     similarProducts: string[];
-
   };
 
 export type ProductResponse = {

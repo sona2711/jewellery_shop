@@ -1,21 +1,11 @@
-.logoWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  padding: 1rem;
-}
-
 .logo {
-  height: 100px;
-  width: auto;
+  width: 100px;
 }
 
 
 @media (max-width: 768px) {
   .logo {
-    height: 60px;
+    width: 60px;
   }
-  
   }
   

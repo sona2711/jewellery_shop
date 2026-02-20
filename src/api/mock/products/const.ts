@@ -3,6 +3,7 @@ import type { CollectionConfig } from "./types";
 export const COLLECTIONS: CollectionConfig[] = [
     {
       collection: "Anna",
+      slug:"anna",
       gender: "women",
       categories: ["ring", "bracelet", "earring", "necklace","wedding-ring"],
       metals: ["White Gold", "Rose Gold"],
@@ -25,6 +26,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "The Father",
+      slug:"the-father",
       gender: "men",
       categories: ["ring", "pendant","bracelet"],
       metals: ["Silver", "Gold"],
@@ -46,6 +48,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "Signature",
+      slug:"signature",
       gender: "men",
       categories: ["ring", "bracelet", "pendant"],
       metals: ["Silver", "Gold"],
@@ -67,6 +70,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "Alpha",
+      slug: "alpha",
       gender: "men",
       categories: ["ring", "pendant"],
       metals: ["Gold", "Silver"],
@@ -88,6 +92,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "Sparks",
+      slug: "sparks",
       gender: "men",
       categories: ["ring", "bracelet", "cufflink","pendant" ],
       metals: ["Gold", "Rhodium-plated Silver"],
@@ -110,6 +115,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "Suit & Tie",
+      slug:"suit-and-tie",
       gender: "men",
       categories: ["cufflink"],
       metals: ["Silver"],
@@ -120,6 +126,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "Yerevan",
+      slug:"yerevan",
       gender: "men",
       categories: ["pendant", "bracelet", "cufflink"],
       metals: ["Gold", "Silver", "Rhodium-plated Silver"],
@@ -142,6 +149,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "Snowflake",
+      slug: "snowflake",
       gender: "men",
       categories: ["ring", "bracelet", "pendant"],
       metals: ["Gold", "Leather"],
@@ -165,6 +173,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "Ornament",
+      slug: "ornament",
       gender: "men",
       categories: ["necklace", "pendant", "cufflink", "bracelet"],
       metals: ["White Gold", "Yellow Gold"],
@@ -186,6 +195,7 @@ export const COLLECTIONS: CollectionConfig[] = [
     },
     {
       collection: "Exclusive & Authorship",
+      slug: "exclusive-and-authorship",
       gender: "unisex",
       categories: ["ring", "necklace", "pendant"],
       metals: ["Gold"],
