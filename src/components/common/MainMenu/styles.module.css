@@ -30,7 +30,7 @@
 
 .dropdownContent {
   display: flex;
-  gap: 40px;
+  gap: 10px;
 }
 
 .gridContainer {
@@ -40,7 +40,8 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 30px;
+  gap: 10px;
+  line-height: 24px !important;
 }
 
 .grid a {
@@ -62,7 +63,6 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
 }
 
 @media (max-width: 785px) {

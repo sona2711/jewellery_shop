@@ -2,7 +2,7 @@
     max-width: 360px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 8px;
   }
   
   .price {

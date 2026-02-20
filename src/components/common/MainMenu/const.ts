@@ -1,5 +1,10 @@
 import type { MenuKey} from "./types";
-
+import women from "../../../assets/images/banner/banner-her.jpg";
+import men from "../../../assets/images/banner/banner-men.jpg";
+import yerevan from "../../../assets/images/banner/yerevan-collection.jpg";
+import exclusive from "../../../assets/images/banner/sketch_yerevan.jpg";
+import giftbox from "../../../assets/images/service/gifting1.jpg";
+import kassamanWorld from "../../../assets/images/service/service4.jpg";
 
 export const TOP_MENU: { key: MenuKey; labelKey: string }[] = [
   { key: "women", labelKey: "menu.labels.women" },
@@ -24,11 +29,12 @@ export const COLLECTION_SLUGS = {
 };
 
 export const MENU_IMAGES: Partial<Record<MenuKey, string>> = {
-  women: "/images/mega/women.jpg",
-  men: "/images/mega/men.jpg",
-  collections: "/images/mega/collections.jpg",
-  exclusive: "/images/mega/exclusive.jpg",
-  giftGuide: ""
+  women: women,
+  men: men,
+  collections: yerevan,
+  exclusive: exclusive,
+  giftGuide: giftbox,
+  world: kassamanWorld,
 };
 
 
