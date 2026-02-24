@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
-import { Grid } from "antd";
+import { Flex, Grid } from "antd";
 
 import type { Product } from "../../types/product";
 import { fetchProducts } from "../../services/product.service";
@@ -11,6 +11,7 @@ import { AppSort } from "../../components/common/SortPanel";
 import { SORT_OPTIONS } from "../../components/common/SortPanel/const";
 import type { FilterValues } from "../../components/common/FiltersPanel/types";
 import { Loader } from "../../components/common/Loader";
+import { Banner } from "../../components/product/ProductBanner";
 import styles from "./styles.module.css";
 
 
@@ -52,11 +53,12 @@ export const Catalog = () => {
       .finally(() => setLoading(false));
   }, []);
 
-
+  const coverText: string = category ? `${gender?.toLocaleUpperCase()}'S  ${category?.toLocaleUpperCase()}` : `${collectionSlug?.toUpperCase()} COLLECTION`
 
   return (
-    <div className={styles.container}>
-      <div className={styles.filters_wrapper}>
+    <Flex className={styles.container} justify="space-between" align="center" gap="small" vertical aria-label="container">
+      <Banner coverText={coverText} gender={gender ?? ""}/>
+      <section className={styles.filters_wrapper}>
       {screens.md ? (
         <Filters value={filters} onChange={setFilters} />
       ) : (
@@ -68,13 +70,10 @@ export const Catalog = () => {
           onChange={setSortValue}
           placeholderKey="sort.placeholder"
         />
-      </div>
-      <div className={styles.products_wrapper}>
-        {loading && <Loader size={"large"} />}
-
+      </section>
+      {loading && <Loader size={"large"} />}
         <ProductList items={filteredProducts} />
-      </div>
-    </div>
+    </Flex>
   );
 };
 

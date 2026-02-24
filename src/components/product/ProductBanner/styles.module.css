@@ -1,15 +1,21 @@
 .cover_wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 200px;
-  background-color: black;
+  height: min-content;
+  padding: 14px;
+  margin-top: 10px;
+  background-color: black !important;
+  overflow: hidden;
+  
 }
 
-.cover_image{
-  width: 100%;
-  height: 100%;
-  object-fit: cover !important;
+
+@media (max-width: 768px) {
+  .cover_wrapper {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  
 }

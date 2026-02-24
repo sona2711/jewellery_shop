@@ -1,6 +1,6 @@
-import type { Product } from "../../../types/product";
-
-export type ProductSliderProps = {
-  titleKey: string;    
-  products: Product[];
+export type ProductSliderProps<T> = {
+  titleKey?: string;
+  items: T[];
+  renderItem: (item: T) => React.ReactNode;
+  showArrows: boolean
 };

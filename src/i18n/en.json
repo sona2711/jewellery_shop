@@ -9,7 +9,16 @@
     "viewCollection": "View Collection",
     "addToCart": "Add to Cart",
     "subscribe": "Subscribe",
-    "followUs": "Follow us on Instagram"
+    "followUs": "Follow us on Instagram",
+    "youMayAlsoLike": "You May Also Like",
+    "collections": "Collections"
+  },
+  "quotes": {
+    "home":[],
+    "about": [],
+    "catalog":[],
+    "collections": [],
+    "services": []
   },
   "footer": {
     "shop": "Shop",

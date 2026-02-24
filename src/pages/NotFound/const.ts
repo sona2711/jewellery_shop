@@ -7,5 +7,5 @@ export const NOT_FOUND_TEXT_KEYS = {
     
 export const NOT_FOUND_ROUTES = {
     home: '/',
-    catalog: '/catalog',
+    catalog: '/catalog/men/bracelet',
 } as const;

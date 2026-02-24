@@ -20,7 +20,7 @@ export const MenuMobile = () => {
       <Button type="text" onClick={handleClickOpen} className={styles.menuIcon}>
         <MenuOutlined />
       </Button>
-      <Drawer placement="right" onClose={handleClose} open={open}>
+      <Drawer placement="left" onClose={handleClose} open={open}>
         <Menu
           mode="inline"
           items={menuItems}

@@ -16,7 +16,7 @@
     color: black !important;
 }
 
-@media (max-width: 785px){
+@media (max-width: 768px){
     .filters {
         flex-direction: column;
         justify-content: center;

@@ -6,6 +6,7 @@ import { ProductDetails } from "../../components/product/ProductDetails";
 import type { Product } from "../../types/product";
 import { ProductSlider }  from "../../components/product/ProductSlider";
 import { Loader } from "../../components/common/Loader";
+import { SliderProductCard } from "../../components/common/SliderProductCard";
 import styles from "./styles.module.css";
 
 export const ProductPage = () => {
@@ -31,7 +32,7 @@ export const ProductPage = () => {
 
  
   return (
-        <div> 
+        <section aria-label="pdp"> 
           {loading && 
             <div className={styles.container}>
               <Loader size={"large"}/>
@@ -39,7 +40,11 @@ export const ProductPage = () => {
           }
           {product &&  <ProductDetails product={product} />}
           
-          <ProductSlider  titleKey="You May Also Like" products ={similarArray}/>
-        </div>
+          <ProductSlider  
+            titleKey="You May Also Like" 
+            items ={similarArray} 
+            renderItem= {(items:Product)=> <SliderProductCard product={items} />} 
+            showArrows={true}/>
+        </section>
       );
 };

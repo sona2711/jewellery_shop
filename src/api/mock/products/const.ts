@@ -1,4 +1,16 @@
 import type { CollectionConfig } from "./types";
+import anna from '../../../assets/images/products/anna/earing/anna-white-gold-sri-lanka-sapphires-earing1_1.jpg';
+import theFather from '../../../assets/images/products/thefather/ring/rodium-silver-swarovski-ring1_1.jpg';
+import signature from '../../../assets/images/products/signature/necklace/silver-necklace.jpg';
+import alpha from '../../../assets/images/products/alpha/cufflink/cufflink-gold1.jpg';
+import sparks from '../../../assets/images/products/sparks/bracelet/silver-bracelet-black-stones1_1.jpg';
+import suitAndTie from '../../../assets/images/products/suit&tie/cufflink/silver-rose-gold-sadaf-cufflink1_1.jpg';
+import snowFlake from '../../../assets/images/products/snowflake/ring/ring-silver-swarovski.jpg';
+import ornament from '../../../assets/images/products/ornament/pendant/pendant-cross1_2.jpg';
+import yerevan from '../../../assets/images/products/yerevan/pendant/gold-pendant-princesscut1_1.jpg';
+import exclusive from '../../../assets/images/banner/sketch_yerevan.jpg';
+
+
 
 export const COLLECTIONS: CollectionConfig[] = [
     {
@@ -23,6 +35,7 @@ export const COLLECTIONS: CollectionConfig[] = [
           { value: "gold rose", label: "Gold Rose ", available: true, priceDelta: +300 },
         ]
       },
+      images: [anna],
     },
     {
       collection: "The Father",
@@ -45,6 +58,7 @@ export const COLLECTIONS: CollectionConfig[] = [
           { value: "silver", label: "Silver", available: true, priceDelta: -200 },
         ]
       },
+      images: [ theFather]
     },
     {
       collection: "Signature",
@@ -67,6 +81,7 @@ export const COLLECTIONS: CollectionConfig[] = [
           { value: "silver", label: "Silver", available: true, priceDelta: -200 },
         ]
       },
+      images: [signature]
     },
     {
       collection: "Alpha",
@@ -89,6 +104,7 @@ export const COLLECTIONS: CollectionConfig[] = [
           { value: "silver", label: "Silver", available: true, priceDelta: -200 },
         ]
       },
+      images: [alpha]
     },
     {
       collection: "Sparks",
@@ -112,6 +128,7 @@ export const COLLECTIONS: CollectionConfig[] = [
           { value: "Rhodium-plated-silver", label: "Rhodium-plated Silver", available: true, priceDelta: -200 },
         ]
       },
+      images: [sparks]
     },
     {
       collection: "Suit & Tie",
@@ -123,6 +140,7 @@ export const COLLECTIONS: CollectionConfig[] = [
       purity: "22K",
       priceRange: [900, 2000],
       isExclusive: false,
+      images: [suitAndTie]
     },
     {
       collection: "Yerevan",
@@ -146,6 +164,7 @@ export const COLLECTIONS: CollectionConfig[] = [
           { value: "rhodium-plated-silver", label: "Rhodium-plated Silver", available: true, priceDelta: -200 },
         ]
       },
+      images: [yerevan]
     },
     {
       collection: "Snowflake",
@@ -169,7 +188,7 @@ export const COLLECTIONS: CollectionConfig[] = [
           { value: "leather", label: "Leather", available: true, priceDelta: -200 },
         ]
       },
-
+      images: [snowFlake]
     },
     {
       collection: "Ornament",
@@ -192,6 +211,7 @@ export const COLLECTIONS: CollectionConfig[] = [
           { value: "white gold", label: "White Gold", available: true, priceDelta: -200 },
         ]
       },
+      images: [ornament]
     },
     {
       collection: "Exclusive & Authorship",
@@ -208,6 +228,7 @@ export const COLLECTIONS: CollectionConfig[] = [
       purity: "18K",
       priceRange: [3500, 12000],
       isExclusive: true,
+      images: [exclusive]
     },
   ];
   
