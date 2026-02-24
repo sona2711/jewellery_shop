@@ -13,7 +13,6 @@ export const getMenuContent = (
 ): Record<MenuKey, { sections: { title?: string; links: { label: string; to: string }[] }[]; image?: string }> => {
   const womenCollections = collections.filter((c) => c.gender === "women");
   const menCollections = collections.filter((c) => c.gender === "men");
-  const allCollections = collections.filter((c) => !c.isExclusive);
   const exclusiveCollections = collections.filter((c) => c.isExclusive);
 
   return {
@@ -21,14 +20,6 @@ export const getMenuContent = (
       image: images?.women,
       sections: [
         {
-          title: t("menu.labels.collections"),
-          links: womenCollections.map((c) => ({
-            label: c.collection,
-            to: `/catalog/${c.slug}`,
-          })),
-        },
-        {
-          title: t("menu.labels.women"),
           links: [
             { label: t("menu.women.weddingRings"), to: "/catalog/women/wedding-ring" },
             { label: t("menu.women.earrings"), to: "/catalog/women/earring" },
@@ -42,14 +33,6 @@ export const getMenuContent = (
       image: images?.men,
       sections: [
         {
-          title: t("menu.labels.collections"),
-          links: menCollections.map((c) => ({
-            label: c.collection,
-            to: `/catalog/${c.slug}`,
-          })),
-        },
-        {
-          title: t("menu.labels.men"),
           links: [
             { label: t("menu.men.rings"), to: "/catalog/men/ring" },
             { label: t("menu.men.bracelets"), to: "/catalog/men/bracelet" },
@@ -64,7 +47,15 @@ export const getMenuContent = (
       image: images?.collections,
       sections: [
         {
-          links: allCollections.map((c) => ({
+          title: t("menu.labels.men"),
+          links: menCollections.map((c) => ({
+            label: c.collection,
+            to: `/catalog/${c.slug}`,
+          })),
+        },
+        {
+          title: t("menu.labels.women"),
+          links: womenCollections.map((c) => ({
             label: c.collection,
             to: `/catalog/${c.slug}`,
           })),
@@ -135,24 +126,10 @@ export const buildMobileMenuItems = (
     {
       key: "women",
       label: t("menu.labels.women"),
-      children: [
-        {
-          key: "women-collections",
-          label: t("menu.labels.collections"),
-          children: menuContent.women.sections[0].links.map((link) => ({
+      children: menuContent.women.sections[0].links.map((link) => ({
             key: link.to,
             label: React.createElement(Link, { to: link.to }, link.label),
           })),
-        },
-        {
-          key: "women-categories",
-          label: t("menu.labels.women"),
-          children: menuContent.women.sections[1].links.map((link) => ({
-            key: link.to,
-            label: React.createElement(Link, { to: link.to }, link.label),
-          })),
-        },
-      ],
     },
     {
       key: "men",
@@ -165,11 +142,23 @@ export const buildMobileMenuItems = (
     {
       key: "collections",
       label: t("menu.labels.collections"),
-      children: menuContent.collections.sections[0].links.map((link) => ({
-        key: link.to,
-        label: React.createElement(Link, { to: link.to }, link.label),
-      })),
-    },
+      children: [  
+      {
+        key: "women-collections",
+        label: t("menu.labels.women"),
+        children: menuContent.collections.sections[1].links.map((link) => ({
+          key: link.to,
+          label: React.createElement(Link, { to: link.to }, link.label),
+        })),
+      },
+      {
+        key: "men-collections",
+        label: t("menu.labels.men"),
+        children: menuContent.collections.sections[0].links.map((link) => ({
+          key: link.to,
+          label: React.createElement(Link, { to: link.to }, link.label),
+        }))}
+    ]},
     {
       key: "exclusive",
       label: t("menu.labels.exclusive"),
