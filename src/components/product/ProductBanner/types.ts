@@ -1,4 +1,4 @@
-export type BannerProps = {
+export type ProductBannerProps = {
     coverText: string;
     gender: string
 }

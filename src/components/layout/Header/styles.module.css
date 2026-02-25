@@ -1,11 +1,14 @@
 :global .ant-layout-header {
   padding: 0;
+  line-height: 32px;
 }
 .header {
   width: 100%;
   height: min-content;
   position: fixed;
   z-index: 1000;
+ 
+  
 }
 
 .searchIcon {

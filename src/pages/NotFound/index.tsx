@@ -1,4 +1,4 @@
-import { Button, Flex, Result, Space } from 'antd';
+import { Button, Flex, Grid, Result, Space } from 'antd';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -10,10 +10,12 @@ import { COLLECTIONS } from '../../api/mock/products/const';
 import styles from './styles.module.css';
 
 
+const { useBreakpoint } = Grid;
 
 export const NotFound = ({ className }:NotFoundProps) => {
     const { t } = useTranslation();
-
+    const screens = useBreakpoint();
+    const width = screens.md ? (300) : (150)
 
     return (
         <section className={`${styles.wrapper} ${className ?? ''}`}>
@@ -35,9 +37,9 @@ export const NotFound = ({ className }:NotFoundProps) => {
                             </Link>
                         </Button>
                     </Flex>
-                    <Flex  style={{textAlign: "start"}} justify='center' align='center' gap='middle'>
-                        <CollectionCard collection={COLLECTIONS[0]} width={200}/>
-                        <CollectionCard collection={COLLECTIONS[2]} width={150}/>
+                    <Flex  justify='center' align='center' gap='middle'>
+                        <CollectionCard collection={COLLECTIONS[0]} width={width}/>
+                        <CollectionCard collection={COLLECTIONS[2]} width={width}/>
                     </Flex>
                 </Space>
             }

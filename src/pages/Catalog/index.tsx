@@ -11,7 +11,7 @@ import { AppSort } from "../../components/common/SortPanel";
 import { SORT_OPTIONS } from "../../components/common/SortPanel/const";
 import type { FilterValues } from "../../components/common/FiltersPanel/types";
 import { Loader } from "../../components/common/Loader";
-import { Banner } from "../../components/product/ProductBanner";
+import { ProductBanner } from "../../components/product/ProductBanner";
 import styles from "./styles.module.css";
 
 
@@ -57,7 +57,7 @@ export const Catalog = () => {
 
   return (
     <Flex className={styles.container} justify="space-between" align="center" gap="small" vertical aria-label="container">
-      <Banner coverText={coverText} gender={gender ?? ""}/>
+      <ProductBanner coverText={coverText} gender={gender ?? ""}/>
       <section className={styles.filters_wrapper}>
       {screens.md ? (
         <Filters value={filters} onChange={setFilters} />

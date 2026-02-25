@@ -2,15 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   width: 100%;
-  height: min-content;
+  height: 250px;
+  min-width: min-content;
   padding: 14px;
-  margin-top: 10px;
-  background-color: black !important;
+  margin-top: 30px;
   overflow: hidden;
+  background-color: black !important;
   
 }
 
+.title_wrapper {
+  width: 50%;
+  height: 100%;
+}
 
 @media (max-width: 768px) {
   .cover_wrapper {

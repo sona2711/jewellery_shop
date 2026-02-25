@@ -11,7 +11,7 @@ export const Logo = ({image}: LogoProps) => {
     const logoUrl = getImageUrl(image);
     return (
         <Flex 
-        style={{ cursor: 'pointer', padding: '1rem' }}
+        style={{ cursor: 'pointer',padding: '0.5rem' }}
         justify="center" 
         align="center" 
         onClick={() => navigate("/") }>
