@@ -9,9 +9,8 @@
   .main {
     width: 100%;
     min-height: 75vh ;
-    margin-top: 1rem;
+    margin-top: 3rem;
     padding: 5rem 0;
-
   }
 
   @media (max-width: 785px) {

@@ -1,8 +1,5 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 100%; */
-    min-height: 60vh;
+    min-height: 70vh;
+    padding-top: 5rem;
     background-color: white !important;
 }

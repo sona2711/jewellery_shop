@@ -1,5 +1,6 @@
 import { useMemo , useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 import { fetchProducts } from "../../services/product.service";
 import { ProductDetails } from "../../components/product/ProductDetails";
@@ -8,6 +9,7 @@ import { ProductSlider }  from "../../components/product/ProductSlider";
 import { Loader } from "../../components/common/Loader";
 import { SliderProductCard } from "../../components/common/SliderProductCard";
 import styles from "./styles.module.css";
+// import { Flex } from "antd";
 
 export const ProductPage = () => {
   const { id } = useParams<{ id: string}>();
@@ -22,6 +24,7 @@ export const ProductPage = () => {
 
   const product = products.find((p) => p.id.toString() === id);
   const similarProducts = product?.similarProducts;
+  const {t} = useTranslation();
 
   const similarArray = useMemo(() => {
     if (!similarProducts?.length) return [];
@@ -32,16 +35,14 @@ export const ProductPage = () => {
 
  
   return (
-        <section aria-label="pdp"> 
+        <section className={styles.container} aria-label="pdp"> 
           {loading && 
-            <div className={styles.container}>
               <Loader size={"large"}/>
-            </div>
           }
           {product &&  <ProductDetails product={product} />}
           
           <ProductSlider  
-            titleKey="You May Also Like" 
+            titleKey={t("common.youMayAlsoLike")}
             items ={similarArray} 
             renderItem= {(items:Product)=> <SliderProductCard product={items} />} 
             showArrows={true}/>

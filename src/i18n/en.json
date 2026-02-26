@@ -6,20 +6,44 @@
   },
   "common": {
     "learnMore": "Learn More",
-    "viewCollection": "View Collection",
+    "viewCollection": "Explore Collection",
     "addToCart": "Add to Cart",
     "subscribe": "Subscribe",
     "followUs": "Follow us on Instagram",
     "youMayAlsoLike": "You May Also Like",
     "collections": "Collections"
   },
-  "quotes": {
-    "home":[],
-    "about": [],
-    "catalog":[],
-    "collections": [],
-    "services": []
-  },
+  "brand": {
+      "philosophy": {
+        "simplicity": "We find charm in simplicity and give minimalism a distinct identity.",
+        "elegance": "The essence of refined elegance captured in a single piece.",
+        "emotion": "When you see a piece and instantly know — it is about Her."
+      },
+      "collections": {
+        "anna": {
+          "quote1": "When a person becomes a muse, magic happens.",
+          "quote2": "For those who don’t choose roses.",
+          "quote3": "Blue like the ocean. Bold like you."
+        },
+        "yerevan": {
+          "quote": "A city born of stone, yet alive with soul — where heritage meets modern form."
+        },
+        "father": {
+          "quote": "A collection shaped by time and admired across generations."
+        }
+      },
+      "sentiments": {
+        "gifting": "The most beautiful moments begin with this very box. Kassaman — the perfect surprise for your loved ones.",
+        "gemstones": "The tenderness of tourmaline set in a luxurious gold frame.",
+        "selfExpression": "For those who define their own rules."
+      },
+      "slogans": {
+        "rules": "Those who define their own rules.",
+        "gift": "Kassaman — the finest surprise for your loved ones.",
+        "tourmaline": "More than just green.",
+        "progress": "Always in Progress. Always in Style."
+      }
+    },
   "footer": {
     "shop": "Shop",
     "customer_service": "Customer Service",
@@ -211,6 +235,14 @@
             "subtitle": "Please check the URL and try again, or continue shopping.",
             "home": "Go to Home",
             "catalog": "Go to Catalog"
+          },
+          "hero": {
+            "title": "Elegance in Every Detail",
+            "titleSeo": "Luxury Women's JELL Collection",
+            "subtitle": "Discover timeless fashion designed for modern confidence.",
+            "cta": "Explore Collection",
+            "ctaAria": "Explore our jewellery collection",
+            "videoAria": "Background video showing jewellery models"
           }
             
         

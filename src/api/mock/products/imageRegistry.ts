@@ -132,6 +132,15 @@ import pendantYerevan1_1 from "../../../assets/images/products/yerevan/pendant/g
 import pendantYerevan1_2 from "../../../assets/images/products/yerevan/pendant/gold-pendant-princesscut1_2.jpg";
 import pendantYerevan2_1 from "../../../assets/images/products/yerevan/pendant/rodium-silver-swarovski-pendant.jpg";
 
+//hero videos
+import men_1 from "../../../assets/videos/men_1.mp4";
+import women_1 from "../../../assets/videos/women_1.mp4";
+import women_2 from "../../../assets/videos/women_2.mp4";
+
+
+//hero images
+import men_banner from "../../../assets/images/banner/banner-him.jpg";
+import women_banner from "../../../assets/images/banner/banner-her.jpg";
 
 
 
@@ -245,8 +254,17 @@ export const COLLECTION_IMAGES: Record<string, Partial<Record<ProductCategory, s
     ],
   },
 };
-
 export { placeholder };
 
 
+export const HERO_MOBILE_IMAGE : Record<string, string>= {
+  men: men_banner,
+  women: women_banner,
+};
 
+export const HERO_VIDEOS: Record<string, string> = {
+  women1: women_1,
+  men1: men_1,
+  women2: women_2
+
+}
