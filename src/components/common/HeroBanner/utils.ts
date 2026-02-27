@@ -10,10 +10,22 @@ export const getHeroVideoByLocale = (
   );
 };
 
-export const isMobileDevice = (): boolean =>
-  window.innerWidth < 768;
+export function prefersReducedMotion() {
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
 
-export const prefersReducedMotion = (): boolean =>
-  window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
-).matches;
+export function isMobileDevice() {
+  return window.matchMedia("(max-width: 768px)").matches;
+}
+
+export function createVideoObserver(video: HTMLVideoElement) {
+  return new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    },
+    { threshold: 0.4 }
+  );
+}

@@ -264,7 +264,7 @@ export const HERO_MOBILE_IMAGE : Record<string, string>= {
 
 export const HERO_VIDEOS: Record<string, string> = {
   women1: women_1,
-  men1: men_1,
+  men: men_1,
   women2: women_2
 
 }

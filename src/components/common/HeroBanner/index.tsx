@@ -1,83 +1,115 @@
+import { useEffect, useRef, useState } from "react";
 import { Flex, Typography, Button } from "antd";
+import { PauseOutlined, CaretRightOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
-import { isMobileDevice, prefersReducedMotion } from "./utils";//   getHeroVideoByLocale,
-// import { HERO_VIDEOS_BY_LOCALE } from "./const"; 
-import {  HERO_VIDEOS } from "../../../api/mock/products/imageRegistry"; //HERO_MOBILE_IMAGE,
+
+import { HERO_SLIDES } from "./const";
+import { useHeroRotation } from "../../../hook/useHeroRotation";
+import {
+  prefersReducedMotion,
+  isMobileDevice,
+  createVideoObserver,
+} from "./utils";
+
 import type { HeroVideoSectionProps } from "./types";
 import styles from "./styles.module.css";
+import { Link } from "react-router-dom";
 
 const { Title, Paragraph } = Typography;
 
-export const HeroSection = ({onCtaClick}: HeroVideoSectionProps) => {
-    const { t, } = useTranslation(); //i18n 
-    const isMobile = isMobileDevice();
-    const reduceMotion = prefersReducedMotion();
-//  const videoSrc = getHeroVideoByLocale(i18n.language);
-    const videos : string[] = Object.values(HERO_VIDEOS);
+export const HeroSection = ({ onCtaClick }: HeroVideoSectionProps) => {
+  const { t } = useTranslation();
+
+  const reduceMotion = prefersReducedMotion();
+  const isMobile = isMobileDevice();
+
+  const [isPaused, setIsPaused] = useState(false);
+  const canAnimate = !reduceMotion && !isPaused && !isMobile;
+
+  const activeIndex = useHeroRotation(
+    HERO_SLIDES.length,
+    8000,
+    canAnimate
+  );
+
+  const activeSlide = HERO_SLIDES[activeIndex];
+
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (!videoRef.current || !sectionRef.current) return;
+
+    const observer = createVideoObserver(videoRef.current);
+    observer.observe(sectionRef.current);
+
+    return () => observer.disconnect();
+  }, [activeIndex]);
+
+  useEffect(() => {
+    if (!videoRef.current) return;
+  
+    if (isPaused) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play().catch(() => {});
+    }
+  }, [isPaused]);
 
   return (
-    <section className={styles.hero_section}>
-      {/* Background */}
-      {isMobile || reduceMotion ? (
+    <section ref={sectionRef} className={styles.hero_section}>
+      {HERO_SLIDES.map((slide, index) => (
         <video
-        className={styles.hero_video}
-        src={videos[0]}
-        autoPlay
-        muted
-        loop
-        playsInline
-        aria-label={t("hero.videoAria")}
+          key={`${index}${slide.video}`}
+          ref={index === activeIndex ? videoRef : null}
+          className={`${styles.hero_video} ${
+            index === activeIndex ? styles.active : styles.hidden
+          }`}
+          src={slide.video}
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden={index !== activeIndex}
         />
-        
-      ) : (
-        videos.map((videoSrc:string , index:number) => (
-               <video key={index}
-                className={styles.hero_video}
-                src={videoSrc}
-                autoPlay
-                muted
-                loop
-                playsInline
-                aria-label={t("hero.videoAria")}
-                />
-            ))
-        
-      )}
+      ))}
 
-      {/* Overlay + Content */}
+      {/* Overlay Content */}
       <Flex
         vertical
         justify="center"
         align="center"
         className={styles.content_wrapper}
       >
-        <Title
-          level={1}
-          className={styles.hero_title}
-        >
-          {t("brand.slogans.progress")}
+        <Title level={1} className={styles.hero_title}>
+          {t(activeSlide.titleKey)}
         </Title>
 
         <Paragraph className={styles.hero_subtext}>
-          {t("brand.collections.anna.quote1")}
+          {t(activeSlide.subtitleKey)}
         </Paragraph>
 
-        <Button
-          type="primary"
-          size="large"
-          aria-label={t("hero.ctaAria")}
-          onClick={onCtaClick}
-        >
-          {t("common.viewCollection")}
-        </Button>
+          <Button
+            type="primary"
+            size="large"
+            onClick={onCtaClick}
+          >
+            <Link to={activeSlide.linkTo}> 
+                {t("common.viewCollection")}
+            </Link>
+          </Button>
       </Flex>
+      {!reduceMotion && !isMobile && (
+            <Button
+              type="text"
+              className={styles.motion_toggle}
+              aria-label={isPaused ? "Play video" : "Pause video"}
+              onClick={() => setIsPaused((p) => !p)}
+              icon={
+                isPaused ? <CaretRightOutlined /> : <PauseOutlined />
+              }
+            />
+          )}
     </section>
   );
 };
-
-
-{/* <img
-    src={HERO_MOBILE_IMAGE.men}
-    alt={t("hero.videoAria")}
-    className={styles.hero_image}  
-/> */}
