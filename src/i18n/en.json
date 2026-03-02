@@ -6,12 +6,14 @@
   },
   "common": {
     "learnMore": "Learn More",
+    "viewCollection": "Explore Collection",
     "explore": "Explore",
     "addToCart": "Add to Cart",
     "subscribe": "Subscribe",
     "followUs": "Follow us on Instagram",
     "youMayAlsoLike": "You May Also Like",
     "collections": "Collections",
+    "bestSellers": "Best Sellers",
     "whyChooseUs": "Why Choose Us"
   },
   "brand": {
@@ -31,6 +33,14 @@
         },
         "father": {
           "quote": "A collection shaped by time and admired across generations."
+        },
+        "engagementRings": {
+          "title": "Engagement Rings",
+          "description": "Celebrate your love story with our exquisite engagement rings, crafted with exceptional diamonds and timeless elegance. Each piece symbolizes a promise that lasts forever."
+        },
+        "weddingRings": {
+          "title": "Wedding Rings",
+          "description": "Discover wedding rings designed to represent eternal unity and devotion. Crafted with precision and refined simplicity, made to be worn for a lifetime."
         }
       },
       "sentiments": {

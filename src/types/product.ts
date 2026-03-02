@@ -56,6 +56,7 @@ export type Product = {
     isExclusive?: boolean;
     variants?: ProductVariant[];
     similarProducts: string[];
+    bestSeller: boolean
   };
 
 export type ProductResponse = {

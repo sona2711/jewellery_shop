@@ -146,7 +146,8 @@ import women_banner from "../../../assets/images/banner/banner-her.jpg";
 //ABOUT
 import aboutImg from "../../../assets/images/service/service3.jpg"
 
-
+//Engangment
+import engangment_img from "../../../assets/images/banner/engangment.jpg"
 
 
 
@@ -275,4 +276,5 @@ export const HERO_VIDEOS: Record<string, string> = {
 
 }
 
-export const about = aboutImg
+export const about = aboutImg;
+export const eng_img = engangment_img

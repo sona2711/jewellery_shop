@@ -15,6 +15,7 @@ export const generateProducts = (itemsPerCollection = 20): Product[] => {
         const metal = randomFrom(config.metals);
         const stone = config.stones ? randomFrom(config.stones) : undefined;
         const price = randomPrice(config.priceRange);
+        const bestSeller = Math.random() < 0.4;
         
         const product: Product = {
           id: ID++,
@@ -37,7 +38,8 @@ export const generateProducts = (itemsPerCollection = 20): Product[] => {
             purity: config.purity
           },
           options: config.options,
-          variants: []
+          variants: [],
+          bestSeller: bestSeller,
         };
 
 
@@ -50,7 +52,10 @@ export const generateProducts = (itemsPerCollection = 20): Product[] => {
   )
 
   products = attachSimilarProducts(products);
-
+  
   return products;
 };
 
+
+
+export const bestSellers = generateProducts().filter((product:Product)=> product.bestSeller === true).slice(0,12)
