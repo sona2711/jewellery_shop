@@ -143,6 +143,12 @@ import men_banner from "../../../assets/images/banner/banner-him.jpg";
 import women_banner from "../../../assets/images/banner/banner-her.jpg";
 
 
+//ABOUT
+import aboutImg from "../../../assets/images/service/service3.jpg"
+
+
+
+
 
 
 
@@ -268,3 +274,5 @@ export const HERO_VIDEOS: Record<string, string> = {
   women2: women_2
 
 }
+
+export const about = aboutImg

@@ -6,7 +6,7 @@
   },
   "common": {
     "learnMore": "Learn More",
-    "viewCollection": "Explore Collection",
+    "explore": "Explore",
     "addToCart": "Add to Cart",
     "subscribe": "Subscribe",
     "followUs": "Follow us on Instagram",
@@ -270,11 +270,33 @@
                 "title": "Always in Progress, Always in Style",
                 "description": "Timeless designs that transcend trends, made to be passed down."
               }
-            }
-          
+            },
+            "home": {
+                "aboutPreview": {
+                  "title": "About Us",
+                  "description": "We create timeless jewelry pieces crafted with passion and precision. Discover elegance designed to last forever."
+                }
+              },
             
-        
-        
+            "about": {
+                "title": "About Our Brand",
+                "subtitle": "Timeless Elegance, Crafted with Passion",
+                "description": {
+                  "p1": "Our jewelry is more than an accessory — it is a reflection of individuality and refined taste.",
+                  "p2": "Each piece is handcrafted using high-quality materials and carefully selected gemstones.",
+                  "p3": "We believe true luxury lies in attention to detail, sustainability, and authentic craftsmanship."
+                },
+                "missionTitle": "Our Mission",
+                "missionText": "To create meaningful jewelry that tells a story and becomes part of your life's most precious moments.",
+                "valuesTitle": "Our Values",
+                "values": {
+                  "quality": "Exceptional Quality",
+                  "craftsmanship": "Handcrafted Excellence",
+                  "sustainability": "Responsible Sourcing",
+                  "timelessDesign": "Timeless Design"
+                }
+              }
+            
       }
       
 
