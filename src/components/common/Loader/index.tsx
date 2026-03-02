@@ -5,7 +5,7 @@ import type { LoaderProps } from './types';
 import logo from "../../../assets/images/logo/logo_dark.png"
 
 export const Loader = ({size}: LoaderProps) => (
-  <Flex justify="center" align="center" gap="middle" vertical style={{width: "100vw"}}>
+  <Flex justify="center" align="center" gap="middle" vertical style={{width: "100vw",height: "75vh"}}>
     <Logo image={logo}/>
     <Spin indicator={<LoadingOutlined spin />} size={size} />
   </Flex>

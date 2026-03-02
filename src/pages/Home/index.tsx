@@ -4,6 +4,7 @@ import type { CollectionConfig } from "../../api/mock/products/types"
 import { CollectionCard } from "../../components/common/CollectionCard"
 import { HeroSection } from "../../components/common/HeroBanner"
 import { ProductSlider } from "../../components/product/ProductSlider"
+import { Advantages } from "../../components/common/Advantages";
 
 export const Home = () => {
     const {t} = useTranslation();
@@ -15,6 +16,7 @@ export const Home = () => {
             items ={COLLECTIONS} 
             renderItem= {(collection: CollectionConfig)=> <CollectionCard collection={collection} width={300}/>} 
             showArrows={true}/>
+            <Advantages/>
         </>
     )
 }

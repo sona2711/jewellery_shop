@@ -11,7 +11,8 @@
     "subscribe": "Subscribe",
     "followUs": "Follow us on Instagram",
     "youMayAlsoLike": "You May Also Like",
-    "collections": "Collections"
+    "collections": "Collections",
+    "whyChooseUs": "Why Choose Us"
   },
   "brand": {
       "philosophy": {
@@ -243,7 +244,34 @@
             "cta": "Explore Collection",
             "ctaAria": "Explore our jewellery collection",
             "videoAria": "Background video showing jewellery models"
-          }
+          },
+          "advantages": {
+              "diamonds": {
+                "title": "Certified Natural Diamonds",
+                "description": "All diamonds are ethically sourced, from natural diamonds to Brazilian Imperial Topaz."
+              },
+              "metals": {
+                "title": "Luxury Metals",
+                "description": "Crafted in 14K, 18K, and 22K gold, with white and rose gold options."
+              },
+              "craftsmanship": {
+                "title": "Emotional Craftsmanship",
+                "description": "Each piece tells a story - inspired by Anna, Yerevan, and timeless elegance."
+              },
+              "services": {
+                "title": "Free Resizing & Lifetime Cleaning",
+                "description": "One free resizing within the first year and complimentary professional cleaning forever."
+              },
+              "sustainability": {
+                "title": "Sustainably Sourced Gemstones",
+                "description": "From Colombian emeralds to London blue topaz - traceable and ethical."
+              },
+              "timeless": {
+                "title": "Always in Progress, Always in Style",
+                "description": "Timeless designs that transcend trends, made to be passed down."
+              }
+            }
+          
             
         
         
