@@ -1,0 +1,33 @@
+.container {
+    padding: 60px 20px; 
+}
+  
+.card {
+    text-align: center;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+}
+  
+/* .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+} */
+  
+.iconWrapper {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+  
+  
+.description {
+    font-size: 14px;
+}
+
+.reset_scroll {
+    overflow-x: auto !important;
+    height: auto !important;
+  }
+
+
+.reset_scroll::-webkit-scrollbar {
+    display: none; 
+  }
