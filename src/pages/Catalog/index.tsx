@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
-import { Flex, Grid } from "antd";
+import { Grid } from "antd";
 
 import type { Product } from "../../types/product";
 import { fetchProducts } from "../../services/product.service";
@@ -56,7 +56,7 @@ export const Catalog = () => {
   const coverText: string = category ? `${gender?.toLocaleUpperCase()}'S  ${category?.toLocaleUpperCase()}` : `${collectionSlug?.toUpperCase()} COLLECTION`
 
   return (
-    <Flex className={styles.container} justify="space-between" align="center" gap="small" vertical aria-label="container">
+    <>
       <ProductBanner coverText={coverText} gender={gender ?? ""}/>
       <section className={styles.filters_wrapper}>
       {screens.md ? (
@@ -73,7 +73,7 @@ export const Catalog = () => {
       </section>
       {loading && <Loader size={"large"} />}
         <ProductList items={filteredProducts} />
-    </Flex>
+    </>
   );
 };
 

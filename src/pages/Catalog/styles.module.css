@@ -1,12 +1,9 @@
-.container {
-    background-color: #fcf8f8;
-    width: 100vw;
-}
 
 .filters_wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 12px;
+    padding: 0 14px;
 }
+

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Drawer, Button } from "antd";
+import { Drawer, Button, Flex } from "antd";
 import { SlidersOutlined } from "@ant-design/icons";
 
 import type { FilterProps} from "../FiltersPanel/types";
@@ -25,13 +25,13 @@ export const MobileFilters = ({value, onChange }: FilterProps) => {
         onClose={() => setOpen(false)}
         width="90%"
         >
-          <Filters  value={value} onChange={onChange}/>
-            <div className={styles.drawerActions}>
+            <Filters  value={value} onChange={onChange}/>
+            <Flex className={styles.drawerActions}  gap="middle" vertical>
                 <Button block onClick={()=>{'reset'}}>Reset</Button>
                 <Button type="primary" block onClick={()=>{"Apply"}}>
                     Apply
                 </Button>
-            </div>
+            </Flex>
         </Drawer>
     </>
   );

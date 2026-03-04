@@ -149,6 +149,10 @@ import aboutImg from "../../../assets/images/service/service3.jpg"
 //Engangment
 import engangment_img from "../../../assets/images/banner/engangment.jpg"
 
+//gifting
+import forHer from "../../../assets/images/service/gifting3.jpg";
+import forHim from "../../../assets/images/service/gifting_forHim.jpg";
+
 
 
 
@@ -277,4 +281,7 @@ export const HERO_VIDEOS: Record<string, string> = {
 }
 
 export const about = aboutImg;
-export const eng_img = engangment_img
+export const eng_img = engangment_img;
+
+export const forHimImg = forHim;
+export const forHerImg = forHer;

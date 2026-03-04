@@ -7,6 +7,10 @@
   }
   
   .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
     width: 100%;
     min-height: 75vh ;
     margin-top: 3rem;
@@ -16,6 +20,7 @@
   @media (max-width: 785px) {
     .main {
       padding: 1rem 0 !important;
+      margin-top: 1.5rem;
     }
     
   }

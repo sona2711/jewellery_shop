@@ -1,9 +1,10 @@
 .container {
-    padding: 100px 0;
+    padding: 2rem 0;
+    width: 99%;
   }
   
 .content_wrapper {
-    max-width: 500px;
+    width: 100%;
     padding: 1rem;
     text-align: center;
     /* background-color: #6B201D; */

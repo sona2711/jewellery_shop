@@ -1,4 +1,4 @@
-import { Form, Input, Button, Typography  } from "antd";
+import { Form, Input, Button, Typography, Flex  } from "antd";
 import { FORM_TITLE} from './consts';
 import styles from "./styles.module.css"
 
@@ -12,7 +12,7 @@ export const FooterContactForm = ()=> {
       };
 
     return (
-        <div className={styles.emailWrapper}>
+        <Flex className={styles.emailWrapper} justify="center" align="center" gap="small" vertical>
             <Title level={2}>{FORM_TITLE}</Title>
              <Form 
                 name="emailForm"
@@ -33,7 +33,7 @@ export const FooterContactForm = ()=> {
                  <Button type="primary" htmlType="submit">Subscribe</Button>
                 </Form.Item>
             </Form>
-        </div>
+        </Flex>
     )
 }
 

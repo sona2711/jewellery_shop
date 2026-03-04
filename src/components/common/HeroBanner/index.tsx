@@ -4,7 +4,7 @@ import { PauseOutlined, CaretRightOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 
 import { HERO_SLIDES } from "./const";
-import { useHeroRotation } from "../../../hook/useHeroRotation";
+import { useHeroRotation } from "../../../hooks/useHeroRotation";
 import {
   prefersReducedMotion,
   isMobileDevice,
@@ -57,7 +57,7 @@ export const HeroSection = ({ onCtaClick }: HeroVideoSectionProps) => {
   }, [isPaused]);
 
   return (
-    <section ref={sectionRef} className={styles.hero_section}>
+    <section ref={sectionRef} className={styles.hero_section} aria-label="Hero">
       {HERO_SLIDES.map((slide, index) => (
         <video
           key={`${index}${slide.video}`}

@@ -10,7 +10,7 @@ export const Advantages = ({items = defaultAdvantages, className = '',}:Advantag
   const { t } = useTranslation();
 
   return (
-    <div className={`${styles.container} ${className}`}>
+    <section className={`${styles.container} ${className}`} aria-label="Advantages">
       <Title level={2} className={styles.sectionTitle}>
         {t('common.whyChooseUs')}
       </Title>
@@ -29,6 +29,6 @@ export const Advantages = ({items = defaultAdvantages, className = '',}:Advantag
           </Col>
         ))}
       </Row>
-    </div>
+    </section>
   );
 };

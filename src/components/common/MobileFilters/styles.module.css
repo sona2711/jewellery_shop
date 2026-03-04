@@ -1,11 +1,9 @@
 .drawerActions {
-    display: flex;
-    flex-direction: column;
     position: sticky;
     bottom: 0;
     background: white;
     padding: 16px;
-    gap: 12px;
+  
   }
   
   

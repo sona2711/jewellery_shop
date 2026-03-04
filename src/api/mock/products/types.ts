@@ -16,5 +16,5 @@ export type CollectionConfig = {
     sizes?: ProductOption[];
     metals?: ProductOption[];
   };
-  images?: string[];
+  images: string[];
 };

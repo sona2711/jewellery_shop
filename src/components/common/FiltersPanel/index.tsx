@@ -1,5 +1,5 @@
 
-import {Select, Slider } from "antd";
+import {Flex, Select, Slider } from "antd";
 import { useTranslation } from "react-i18next";
 
 import type { FilterProps, FilterValues } from "./types";
@@ -27,8 +27,7 @@ export const Filters = ({ value, onChange }: FilterProps) => {
       }
 
 return (
-        <div className={styles.filters}>
-
+        <Flex className={styles.filters} justify="space-between" align="center" gap="large">
                 <Select
                 className={styles.select}
                 allowClear
@@ -81,7 +80,7 @@ return (
                 label: t(o.labelKey),
                 }))}
                 />
-            </div>
+            </Flex>
     )}
 
 

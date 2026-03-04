@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { MenuOutlined } from "@ant-design/icons";
-import { Drawer, Button, Menu } from "antd";
+import { Drawer, Button, Menu, Flex } from "antd";
 import { useTranslation } from "react-i18next";
 import { COLLECTIONS } from "../../../api/mock/products/const";
-import { buildMobileMenuItems } from "../MainMenu/utils"; // նույն utils-ից
+import { buildMobileMenuItems } from "../MainMenu/utils";
 import styles from "./styles.module.css";
 
 export const MenuMobile = () => {
@@ -16,7 +16,7 @@ export const MenuMobile = () => {
   const menuItems = buildMobileMenuItems(t, COLLECTIONS);
 
   return (
-    <div className={styles.menu_wrapper}>
+    <Flex className={styles.menu_wrapper} justify="flex-start" align="center" gap="small">
       <Button type="text" onClick={handleClickOpen} className={styles.menuIcon}>
         <MenuOutlined />
       </Button>
@@ -27,6 +27,6 @@ export const MenuMobile = () => {
           onClick={() => setOpen(false)}
         />
       </Drawer>
-    </div>
+    </Flex>
   );
 };

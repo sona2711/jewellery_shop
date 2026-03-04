@@ -65,3 +65,8 @@ export type ProductResponse = {
     page: number;
     limit: number;
 };
+
+
+export type ApiResponse<T> = {
+    data: T;
+  };
