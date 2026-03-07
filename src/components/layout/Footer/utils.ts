@@ -1,4 +1,4 @@
 export const copyWritingText = ()=> {
     const date = new Date()
-    return `©All rights reserved ${date.getFullYear()}`
+    return `©${date.getFullYear()}Kassaman Jewellery. All rights reserved. `
 }

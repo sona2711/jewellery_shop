@@ -12,13 +12,13 @@ export const FooterContactForm = ()=> {
       };
 
     return (
-        <Flex className={styles.emailWrapper} justify="center" align="center" gap="small" vertical>
+        <Flex className={styles.emailWrapper} justify="center" align="center" gap="middle" vertical>
             <Title level={2}>{FORM_TITLE}</Title>
              <Form 
                 name="emailForm"
                 layout="inline"
                 onFinish={onFinish}
-                style={{ maxWidth: 400 }}
+                style={{ maxWidth: 500 }}
                 >
                 <Form.Item
                 name="email"
@@ -27,10 +27,10 @@ export const FooterContactForm = ()=> {
                 { type: "email", message: "Please enter a valid email address" }
                 ]}
                 >
-                    <Input placeholder="Enter your email" variant="underlined" />
+                    <Input placeholder="Enter your email" variant="underlined" style={{marginBottom: 8}} />
                 </Form.Item>
                 <Form.Item>
-                 <Button type="primary" htmlType="submit">Subscribe</Button>
+                 <Button type="primary" htmlType="submit" style={{ marginLeft: 10 }}>Subscribe</Button>
                 </Form.Item>
             </Form>
         </Flex>

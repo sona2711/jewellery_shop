@@ -6,5 +6,6 @@ type Link = {
 export type FooterColumnProps = {
     title: string;
     links: Link[];
+    component?: React.ComponentType;
     onChange?: () => void;
 }

@@ -14,7 +14,7 @@ export const Advantages = ({items = defaultAdvantages, className = '',}:Advantag
       <Title level={2} className={styles.sectionTitle}>
         {t('common.whyChooseUs')}
       </Title>
-      <Row gutter={[8, 8]} justify="center" wrap={false} className={styles.reset_scroll}>
+      <Row gutter={[8, 8]} justify="center">
         {items.map((item, index) => (
           <Col xs={24} sm={12} md={8} key={index}>
             <Card  className={styles.card}>

@@ -55,31 +55,31 @@
         "progress": "Always in Progress... Always in Style..."
       }
     },
-  "footer": {
-    "shop": "Shop",
-    "customer_service": "Customer Service",
-    "about_us": "About Us",
-    "help": "Help",
-    "links": {
-      "rings": "Rings",
-      "bracelets": "Bracelets",
-      "necklaces": "Necklaces",
-      "earrings": "Earrings",
-      "mens_collection": "Men's Collection",
-      "shipping": "Shipping",
-      "returns": "Returns",
-      "warranty": "Warranty",
-      "track_order": "Track Order",
-      "our_story": "Our Story",
-      "craftsmanship": "Craftsmanship",
-      "stores": "Stores",
-      "careers": "Careers",
-      "faq": "FAQ",
-      "contact": "Contact Us",
-      "privacy": "Privacy Policy",
-      "terms": "Terms & Conditions"
-    }
-  },
+    "footer": {
+        "company": "Company",
+        "support": "Support",
+        "legal": "Legal",
+        "social": "Follow Us",
+        "links": {
+          "story": "Our Story",
+          "blog":"Blog",
+          "services": "Services",
+          "store": "Store Location",
+          "careers": "Careers",
+          "shipping": "Shipping & Delivery",
+          "returns": "Returns & Exchanges",
+          "warranty": "Warranty",
+          "track": "Track Your Order",
+          "faq": "FAQ",
+          "contact": "Contact Us",
+          "privacy": "Privacy Policy",
+          "terms": "Terms of Service",
+          "facebook": "Facebook",
+          "instagram": "Instagram",
+          "telegram": "Telegram",
+          "whatsapp": "WhatsApp"
+        }
+      },
   "menu": {
       "labels": {
         "women": "Women",
@@ -145,7 +145,7 @@
       "contact": {
         "email": "Email Us",
         "phone": "Phone",
-        "stores": "Store Locations",
+        "stores": "Store Location",
         "faq": "FAQ"
       }
     },
