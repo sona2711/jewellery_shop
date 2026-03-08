@@ -12,19 +12,19 @@ export const HERO_SLIDES = [
       video: HERO_VIDEOS.men,
       titleKey: "brand.slogans.rules",
       subtitleKey: "brand.collections.father.quote",
-      linkTo:"/catalog/sparks",
+      linkTo:"/catalog/collection/sparks",
     },
     {
       video: HERO_VIDEOS.women1,
       titleKey: "brand.philosophy.elegance",
       subtitleKey: "brand.collections.anna.quote1",
-      linkTo:"/catalog/anna",
+      linkTo:"/catalog/collection/anna",
     },
     {
       video: HERO_VIDEOS.women2,
       titleKey: "brand.philosophy.emotion",
       subtitleKey: "brand.collections.anna.quote2",
-      linkTo:"/catalog/anna",
+      linkTo:"/catalog/collection/anna",
     },
   ];
   

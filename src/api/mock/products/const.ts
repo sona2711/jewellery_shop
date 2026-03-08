@@ -272,6 +272,6 @@ export const COLLECTION_CARDS: CardInfo[] = COLLECTIONS.map(
     slug,
     image: images[0],
     gender: gender,
-    to: `/catalog/${slug}`,
+    to: `/catalog/collection/${slug}`,
   }),
 );

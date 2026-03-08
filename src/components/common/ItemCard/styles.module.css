@@ -38,3 +38,9 @@
   color: white;
 }
 
+@media (max-width: 768px) {
+  .collectionCard .textOverlay {
+    padding: 0 8px;
+    width: 95%
+  }
+}

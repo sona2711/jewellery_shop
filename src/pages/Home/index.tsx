@@ -9,12 +9,13 @@ import { ProductSlider } from "../../components/product/ProductSlider";
 import { Advantages } from "../../components/common/Advantages";
 import { ImageText } from "../../components/common/ImageTextSection";
 import { SliderProductCard } from "../../components/common/SliderProductCard";
-import { TwoColumnSection } from "../../components/common/TwoColumnSection";
+import { CardGrid} from "../../components/common/CardGrid";
 import {
   ABOUT_IMAGE,
   BEST_SELLERS,
   ENGANGMENT_IMAGE,
   GIFTING_CARDS,
+  CATEGORY_CARDS
 } from "./const";
 // import styles from "./styles.module.css";
 
@@ -23,20 +24,26 @@ export const Home = () => {
   return (
     <>
       <HeroSection />
+      <CardGrid
+        title="filters.category.label"
+        cards={CATEGORY_CARDS.map((card:CardInfo, index:number)=>(
+          <ItemCard key={`${index}${card.name}`} cardInfo={card} width={300} />
+        ))}
+      />
       <ProductSlider
         titleKey={t("common.collections")}
         items={COLLECTION_CARDS}
         renderItem={(cardInfo: CardInfo) => (
-          <ItemCard cardInfo={cardInfo} width={300} />
+          <ItemCard cardInfo={cardInfo} width={350} />
         )}
         showArrows={true}
       />
-      <TwoColumnSection
+      <CardGrid
         title="brand.slogans.gift"
-        cards={[
-          <ItemCard cardInfo={GIFTING_CARDS[0]} width={480} />,
-          <ItemCard cardInfo={GIFTING_CARDS[1]} width={480} />,
-        ]}
+        cards={GIFTING_CARDS.map((card, index)=>(
+          <ItemCard key={`${index}${card.name}`} cardInfo={card} width={480} />
+        ))}
+        quantity={2}
       />
        <ProductSlider
         titleKey={t("common.bestSellers")}

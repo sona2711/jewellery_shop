@@ -50,14 +50,14 @@ export const getMenuContent = (
           title: t("menu.labels.men"),
           links: menCollections.map((c) => ({
             label: c.collection,
-            to: `/catalog/${c.slug}`,
+            to: `/catalog/collection/${c.slug}`,
           })),
         },
         {
           title: t("menu.labels.women"),
           links: womenCollections.map((c) => ({
             label: c.collection,
-            to: `/catalog/${c.slug}`,
+            to: `/catalog/collection/${c.slug}`,
           })),
         },
       ],
@@ -68,7 +68,7 @@ export const getMenuContent = (
         {
           links: exclusiveCollections.map((c) => ({
             label: c.collection,
-            to: `/catalog/${c.slug}`,
+            to: `/catalog/collection/${c.slug}`,
           })),
         },
       ],

@@ -153,8 +153,14 @@ import engangment_img from "../../../assets/images/banner/engangment.jpg"
 import forHer from "../../../assets/images/service/gifting3.jpg";
 import forHim from "../../../assets/images/service/gifting_forHim.jpg";
 
-
-
+//categories
+import ringMen from "../../../assets/images/products/sparks/ring/ring-silver-swarovski-black1_2.jpg";
+import braceletMen from "../../../assets/images/products/anna/bracelet/anna-gold-bracelet1_2.jpg";
+import necklaceWomen from "../../../assets/images/products/anna/necklace/anna-white-gold-necklace1_2.jpg";
+import pendantMen from "../../../assets/images/products/sparks/pendant/black-white-swarovski-pendant.jpg";
+import cufflinkMen from "../../../assets/images/products/suit&tie/cufflink/onix-rodium-silver-cufflink.jpg";
+import weddingRing from "../../../assets/images/products/anna/engangment/white-gold-dimond1_2.jpg";
+import earringWomen from "../../../assets/images/products/anna/earing/anna-white-gold-ruby-earing1_2.jpg";
 
 
 
@@ -285,3 +291,13 @@ export const eng_img = engangment_img;
 
 export const forHimImg = forHim;
 export const forHerImg = forHer;
+
+
+//Category
+export const ring = ringMen;
+export const bracelet = braceletMen;
+export const pendant = pendantMen;
+export const cufflink = cufflinkMen;
+export const wedding_ring = weddingRing;
+export const necklace = necklaceWomen; 
+export const earring = earringWomen;

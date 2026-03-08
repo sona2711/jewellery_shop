@@ -36,11 +36,12 @@ export const Catalog = () => {
       result = result.filter((p) => p.collectionSlug === collectionSlug);
   
     } else if (gender && category) {
-      result = result.filter(
-        (p) => p.gender === gender && p.category?.includes(category)
-      );
+      result = result.filter((p) => p.gender === gender && p.category?.includes(category));
+    } else if (gender) {
+      result = result.filter((p) => p.gender === gender);
+    } else if (category) {
+      result = result.filter((p) => p.category?.includes(category));
     }
-  
   
     return result;
   }, [products, collectionSlug, gender, category]
@@ -53,7 +54,16 @@ export const Catalog = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  const coverText: string = category ? `${gender?.toLocaleUpperCase()}'S  ${category?.toLocaleUpperCase()}` : `${collectionSlug?.toUpperCase()} COLLECTION`
+  const coverText: string =
+    gender && category
+      ? `${gender.toUpperCase()}'S ${category.toUpperCase()}`
+      : gender
+        ? `${gender.toUpperCase()}'S`
+        : category
+          ? `${category.toUpperCase()}`
+          : collectionSlug
+            ? `${collectionSlug.toUpperCase()} COLLECTION`
+            : "CATALOG";
 
   return (
     <>

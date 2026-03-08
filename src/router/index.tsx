@@ -30,11 +30,19 @@ const router = createBrowserRouter([
         element: <Catalog />,
       },
       {
-        path: "/catalog/:collectionSlug",
+        path: "/catalog/collection/:collectionSlug",
+        element: <Catalog />,
+      },
+      {
+        path: "/catalog/category/:category",
         element: <Catalog />,
       },
       {
         path: "/catalog/:gender/:category",
+        element: <Catalog />,
+      },
+      {
+        path: "/catalog/:gender",
         element: <Catalog />,
       },
       {
