@@ -5,10 +5,7 @@
 .header {
   width: 100%;
   height: min-content;
-  position: fixed;
   z-index: 1000;
- 
-  
 }
 
 .searchIcon {
