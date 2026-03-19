@@ -1,5 +1,4 @@
 import { Suspense, type ComponentType, type ReactNode } from "react";
-
 import { Loader } from "../components/common/Loader";
 
 export const PageSuspense = ({ children }: { children: ReactNode }) => (
