@@ -59,7 +59,7 @@ export const SIZE_PRESETS = {
   };
   
   export const AVAILABILITY_COLOR: Record<ProductAvailability, string> = {
-    in_stock: "green",
+    inStock: "green",
     out_of_stock: "red",
     preorder: "gold",
   };
