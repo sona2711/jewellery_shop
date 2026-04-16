@@ -2,7 +2,7 @@
 import {Flex, Select, Slider } from "antd";
 import { useTranslation } from "react-i18next";
 
-import type { FilterProps, FilterValues } from "./types";
+import type { FilterProps, FilterValues, PriceRange } from "./types";
 import { CATEGORY_OPTIONS, METAL_OPTIONS, STONE_OPTIONS, AVAILABILITY_OPTIONS, PRICE_MIN, PRICE_MAX } from "./const";
 import { isValidPriceRange } from "./utils";
 import styles from "./styles.module.css";
@@ -16,10 +16,10 @@ export const Filters = ({ value, onChange }: FilterProps) => {
         onChange({ ...value, ...patch });
     };
     
-    const handleChange = (price : number[]) => {
+    const handleChange = (price: number | number[]) => {
 
         if (Array.isArray(price) && price.length === 2) {
-          const priceTuple: [number, number] = [price[0], price[1]];
+          const priceTuple: PriceRange = [price[0], price[1]];
           if (isValidPriceRange(priceTuple)) {
             update({ price: priceTuple });
           }

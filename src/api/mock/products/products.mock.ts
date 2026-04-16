@@ -1,3 +1,3 @@
 import { generateProducts } from "./generator";
 
-export const PRODUCTS_MOCK = generateProducts(10);
+export const MOCK_PRODUCTS = generateProducts(10);

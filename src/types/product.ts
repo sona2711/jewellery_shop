@@ -1,4 +1,4 @@
-export type ProductAvailability = "in_stock" | "out_of_stock" | "preorder";
+export type ProductAvailability = "inStock" | "onOrder"
 export type ProductCategory = 'ring' | 'necklace' | 'bracelet'| 'earring' | 'cufflink' | 'pendant' | 'wedding-ring';
 export type CollectionGender = "men" | "women" | "unisex";
 export type MetalType = 'gold-585'| 'gold-750'| 'silver-925'| 'silver-925-rhodium';
