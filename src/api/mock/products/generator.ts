@@ -27,7 +27,7 @@ export const generateProducts = (itemsPerCollection = 20): Product[] => {
           collectionSlug: config.slug ,
           price,
           basePrice: price,
-          availability: "in_stock",
+          availability: "inStock",
           sku: generateSKU(config.collection, i),
           similarProducts: [],
           isExclusive: config.isExclusive,

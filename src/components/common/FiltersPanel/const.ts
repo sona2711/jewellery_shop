@@ -12,10 +12,10 @@ export const CATEGORY_OPTIONS: {value: ProductCategory;labelKey: string;}[] = [
   
     
   export const METAL_OPTIONS: {value: MetalType;labelKey: string;}[] = [
-    { value: 'gold-585', labelKey: 'filters.metal.gold585' },
-    { value: 'gold-750', labelKey: 'filters.metal.gold750' },
-    { value: 'silver-925', labelKey: 'filters.metal.silver925' },
-    { value: 'silver-925-rhodium', labelKey: 'filters.metal.silver925Rhodium' },
+    { value: 'gold', labelKey: 'filters.metal.gold585' },
+    { value: 'gold', labelKey: 'filters.metal.gold750' },
+    { value: 'silver', labelKey: 'filters.metal.silver925' },
+    { value: 'rhodium', labelKey: 'filters.metal.silver925Rhodium' },
   ];
     
   export const STONE_OPTIONS = [

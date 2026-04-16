@@ -64,10 +64,7 @@ export const Catalog = () => {
     }
 
     if (filters?.metal) {
-      result = result.filter((p) => {
-      console.log(filters.metal, p.attributes?.metal, filters.metal === p.attributes?.metal)
-    });
-      console.log(result)
+      result = result.filter((p) => filters.metal?.toLowerCase() === p.attributes?.metal.toLowerCase());
     }
     if (filters?.stone) {
       result = result.filter((p) => filters.stone?.toLocaleLowerCase() === p.attributes?.stone?.toLowerCase());
